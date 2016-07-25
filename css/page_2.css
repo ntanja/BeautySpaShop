@@ -1,0 +1,395 @@
+/************************************
+                HEADER
+************************************/
+header{
+    position: fixed;
+    background: rgba(255,255,255,0.6);
+    z-index: 20;
+    width: 100%;
+    top:0;
+}  
+.headerTop{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.headerTop .btn-group button{
+    background: none;
+    border: none;
+}
+.headerTop ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.line{
+    border-bottom: 1px solid #e8e8e8;
+}
+.headerTop .dropdown-menu{
+    text-align: center;
+}
+.headerTop .list-inline{
+    text-align: center;
+}
+.navbar{
+    background: transparent;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+.navbar ul{
+    text-align: center;
+}
+.navbar-brand{
+    margin-top: -20px;
+}
+.shopingCart{
+    position: relative;
+}
+.shopingCart a{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    padding: 0 !important;
+    display: block !important;
+    margin: 0 auto;
+}
+.shopingCart .fa-shopping-cart{
+    color: #6cc515;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+.shopingCart .badge{
+    background-color: #6cc515;
+    color: #fff;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top:-5px;
+    right:-5px;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color: #6cc515;
+}
+
+/***********************MAIN********************/
+
+main{
+    margin-top: 100px;
+}
+/************************************
+              SECTION 1 "frid"
+************************************/
+.figure{
+    height: 1200px;
+}
+.frid{
+    position: relative;
+    margin-bottom: 30px;
+}
+.gridView{
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.gridView h3{
+    color: #fff;
+}
+.view{
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+}
+.view .fa{
+    color: #909090;
+}
+.view .fa:hover{
+    color: #6cc513;
+}
+.view .fa:active{
+    color: #6cc513;
+    border: 1px solid #6cc513;
+}
+.view button{
+    border: 1px solid #e8e8e8;
+    background: transparent;
+    font-size: 12px;
+}
+.btn{
+    padding: 0;
+}
+.btn-group > .btn + .dropdown-toggle{
+    padding-right: 5px;
+padding-left: 5px;
+}
+
+
+
+
+
+
+/************************************
+              SECTION "popular"
+************************************/
+.popular{
+    padding: 30px 0;
+}
+.popular h4{
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 600;
+}
+
+/************************************
+        SECTION 5 "arrivals"
+************************************/
+
+.arrivals figure{
+    height: 320px;
+    margin: 0 10px;
+    border: 1px solid #e8e8e8; 
+}
+.arrivals img{
+    max-height: 100%;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    width: 12px;
+    height: 12px;
+    background-color: #6cc515;
+}
+.carouselHover h4{
+    font-family: 'Lato', sans-serif !important;
+}
+.carouselHover a{
+    text-decoration: none;
+    color: #6cc515;
+    font-family: 'Lato', sans-serif;
+}
+#owl-example .carouselHover{
+    color: #6cc515;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 30%;
+    bottom: 0;
+    right:0;
+    left: 0;
+    margin: 0 auto;
+    display: none;
+    background-image: none;
+    background-color: rgba(255,255,255,0.9);
+}
+#owl-example article:hover .carouselHover{
+    display: block;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/************************************
+         SECTION 6 "shipping"
+************************************/
+.shipping{
+    margin-bottom: 30px;
+    color: #3d3d3d;
+}
+.shipping article{
+    padding: 20px 30px 20px 40px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+}
+.shipping h5{
+   font-family: 'Josefin Sans', sans-serif !important;
+   font-weight: 600;
+}
+.shipping span{
+    font-size: 35px;
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.shipping p{
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+/***********************FOOTER********************/
+
+/************************************
+        SECTION 7 "newsletter"
+************************************/
+.newsletter{
+    background-color: #eeeeee;
+    color: #303030;
+    padding: 45px 0;
+}
+.newsletter label{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.newsletter .btn-default:hover{
+    color: #6cc515;
+    background: #fff;
+}
+.social a{
+    display: block;
+    border:1px solid #d3d3d3;
+    border-radius: 50%;
+    width: 35px;
+    height:35px;
+    background: transparent;
+    text-align: center;
+}
+.social a:hover{
+    background: #fff;
+}
+.social a span.fa{
+    line-height: 35px;
+    font-size: 20px;
+}
+.newsletter span.fa-facebook{
+    color: #3b5999;
+}
+.newsletter .fa-facebook:hover{
+    color: #3b5999;
+    font-size: 30px;
+    transition: 0.5s easy;
+}
+.newsletter .fa-twitter{
+    color: #1da1f3;
+}
+.newsletter .fa-twitter:hover{
+    color: #1da1f3;
+    font-size: 30px;
+    transition: 0.5s easy;
+}
+.social a.pint{
+    background: #c92229;
+}
+.social a.pint:hover{
+    background: #fff;
+}
+.newsletter .fa-pinterest-p{
+    color: #fff;
+}
+.newsletter .fa-pinterest-p:hover{
+    color: #c92229;
+    font-size: 30px;
+    transition: 0.5s easy;
+}
+.newsletter .fa-google-plus{
+    color: #c92229;
+}
+.newsletter .fa-google-plus:hover{
+    color: #c92229;
+    font-size: 25px;
+    transition: 0.5s easy;
+}
+.newsletter .form-control{
+    border: 1px solid #303030;
+}
+.newsletter form{
+    padding-top: 10px;
+}
+.newsletter span.input-group-btn {
+    padding-top: 25px;
+}
+.newsletter .btn{
+    border-radius: 0;
+    border: 1px solid #303030;
+}
+/************************************
+        SECTION 8 "address"
+************************************/
+.address{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+.address img{
+    margin: 0 auto;
+}
+.address h4{
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 600;
+}
+.smallLine{
+    border-bottom: 1px solid #dddddd;
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.address ul{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.address ul li a{
+    text-decoration: none;
+    color: #656565;
+}
+.address ul li a:hover{
+    color: #6cc515;
+}
+.address ul li span.fa-map-marker{
+    font-size: 10px;
+    line-height: 10px;
+    border: 1px solid #656565;
+    border-radius: 50%;
+    padding: 5px 7px;
+}
+.address ul li span.fa-phone{
+    font-size: 10px;
+    line-height: 10px;
+    border: 1px solid #656565;
+    border-radius: 50%;
+    padding: 5px 7px;
+}
+.address ul .fa-envelope{
+    font-size: 10px;
+    line-height: 10px;
+    border: 1px solid #656565;
+    border-radius: 50%;
+    padding: 5px 6px;
+}
+.address .map{
+    text-align: left;
+}
+.address .payment a{
+    padding: 5px;
+}
+.address .payment{
+    margin-bottom: 10px;
+}
+/************************************
+        SECTION 9 "rights"
+************************************/
+.rights{
+    background-color: #eeeeee;
+    color: #656565;
+    font-size: 12px;
+    padding: 15px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+.rights p{
+    margin-bottom: 0;
+}
+.rights span{
+    color: #6cc515; 
+}
