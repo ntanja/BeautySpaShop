@@ -77,3 +77,18 @@
 	min-height: 150px;
 	background: url(style-images/AjaxLoader.gif) no-repeat center center
 }
+
+.owl-buttons {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 100%;
+}
+.owl-next{
+    position: absolute;
+    right: 0px;
+}
+.owl-prev{
+    left: 0px;
+    position: absolute;
+}

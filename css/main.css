@@ -659,3 +659,107 @@ main{
     color: #6cc515; 
 }
 
+/*******************************************/
+/*                  PAGE 2                 */
+/*******************************************/
+
+/************************************
+              SECTION 1 "frid"
+************************************/
+.figure{
+    height: 1200px;
+}
+.frid{
+    position: relative;
+    margin-bottom: 30px;
+}
+.gridView{
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.gridView h3{
+    color: #fff;
+}
+/************************************
+              SECTION 1 "view"
+************************************/
+.view .row{
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+}
+.view article{
+    text-align: center;
+}
+.view .fa{
+    color: #909090;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.view .fa:hover{
+    color: #6cc513;
+}
+.view .fa:active{
+    color: #6cc513;
+    border: 1px solid #6cc513;
+}
+.view button{
+    border: 1px solid #e8e8e8;
+    background: transparent;
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px 0;
+}
+.btn{
+    padding: 5px;
+}
+.btn-group > .btn + .dropdown-toggle{
+    padding-right: 5px;
+padding-left: 5px;
+}
+/************************************
+              SECTION 2 "filtersSelect"
+************************************/
+ul.filter li ul{
+    display: none;
+}
+.categories{
+    margin: 20px 0;
+    border: 1px solid #e8e8e8;
+}
+.formFilter{
+    width: 200px;
+    margin: 0 auto;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 2px solid #6bc513;
+    border-radius: 50%;
+    background: #fff;
+    font-weight: normal;
+}
+.ui-slider .ui-slider-handle {
+    width: 0.8em;
+    height: 0.8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.3em;
+    margin-left: -.6em;
+}
+.ui-widget-header {
+    border: 1px solid #6bc513;
+    background: #6bc513;
+    color: #333333;
+}
+.ui-slider-horizontal {
+    height: .4em;
+}
+.ui-widget-content {
+    border: 1px solid #e8e8e8;
+    background: #eeeeee;
+}
+.ui-corner-all{
+    border-radius: 0;
+}
