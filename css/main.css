@@ -1056,13 +1056,82 @@ article.bestSale{
 /************************************
         SECTION 3 "ourCompany"
 ************************************/
-.ourCompany figure{
-    position: relative;
-    width: 540px;
-    height: 375px;
+
+a.up, a.down{
+    display: block;
+    height: 40%;
+    color: #303030;
 }
-.ourCompany img{
+.input-group-addon{
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    border-radius: 0;
+}
+.productQuantity input{
+    padding: 10px 0;
+    width: 50px;
+    text-align: center;
+}
+/************************************
+        SECTION 3 "ourTeam"
+************************************/
+.ourCompany h3,
+.ourCompany h4{
+    font-family: 'Josefin Sans', sans-serif !important;  
+}
+.ourCompany p{
+    font-family: 'Lato', sans-serif;
+}
+.ourCompany .fa{
+    color: #a0a0a0;
+    font-size: 20px;
+}
+.ourCompany .fa-facebook:hover,
+.teamMember .fa-facebook:hover{
+    color: #3b5999;
+}
+.ourCompany .fa-twitter:hover,
+.teamMember .fa-twitter:hover{
+    color: #1da1f3;
+}
+.ourCompany .fa-pinterest-p:hover,
+.ourCompany .fa-google-plus:hover,
+.teamMember .fa-pinterest-p:hover,
+.teamMember .fa-google-plus:hover{
+    color: #c92229;
+}
+.singleMember{
+    position: relative;
+    margin-bottom: 20px;
+}
+.singleMember .teamMember{
     position: absolute;
-    max-height: 100%;
-    max-width: 100%;
+    color: #fff;
+    background: rgba(149, 207,91,0.8);
+    display: none;
+    padding-top: 20%;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.teamMember img{
+    border: 2px solid #e8e8e8;
+}
+.singleMember:hover .teamMember{
+    display: block;
+}
+.teamMember ul{
+    margin-top: 30px;
+}
+.teamMember .fa{
+    font-size: 20px;
+    color: #fff;
+}
+
+.gMaps iframe{
+    width: 100%;
+    height: 300px;
 }

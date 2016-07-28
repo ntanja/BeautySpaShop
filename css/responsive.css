@@ -77,6 +77,10 @@
     .productList .imageHover{
         padding-top: 50%;
     }
+    /******************************PAGE 4***********************/
+    .singleMember .teamMember{
+        padding-top: 10%;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -160,11 +164,19 @@
         margin-bottom: 30px;
     }
     .arcticSpa ul.weightBorder{
-        width: 270px;
+        width: 180px;
     }
     .preview #main{
         width: 398px;
         height: 530px; 
+    }
+    /******************************PAGE 4***********************/
+    .singleMember .teamMember{
+        padding-top: 20%;
+    }
+    .gMaps iframe{
+        width: 100%;
+        height: 400px;
     }
 }
 
@@ -313,6 +325,18 @@
     }
     .rights{
         padding: 30px;
+    }
+    /******************************PAGE 4***********************/
+    .ourCompany{
+        margin-bottom: 50px;
+    }
+    .singleMember .teamMember{
+        padding-top: 20%;
+    }
+    /******************************PAGE 5***********************/
+    .gMaps iframe{
+        width: 100%;
+        height: 500px;
     }
 }
 

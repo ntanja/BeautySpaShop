@@ -55,26 +55,26 @@ $(document).ready(function () {
 	});
         
   //spinner 
-  $( function() {
-    var spinner = $( "#spinner" ).spinner();
- 
-    $( "#disable" ).on( "click", function() {
-      if ( spinner.spinner( "option", "disabled" ) ) {
-        spinner.spinner( "enable" );
-      } else {
-        spinner.spinner( "disable" );
-      }
-    });
-    $( "#destroy" ).on( "click", function() {
-      if ( spinner.spinner( "instance" ) ) {
-        spinner.spinner( "destroy" );
-      } else {
-        spinner.spinner();
-      }
-    });
-    $( "button" ).button();
-  } );
-       
+$('.productQuantity span a.down').click(function (){
+    var txt = $('.productQuantity input').val();
+
+    if(txt <= 1){
+        $('.productQuantity input').val(1);
+    }
+    else{
+        txt --;
+        $('.productQuantity input').val(txt);
+    }
+    
+});
+
+$('.productQuantity span a.up').click(function (){
+    var txt = $('.productQuantity input').val();
+    txt ++;
+    $('.productQuantity input').val(txt);
+     
+});
+
  //tabulator 
    $( function() {
     $( "#tabs" ).tabs();
