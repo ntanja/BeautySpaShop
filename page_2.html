@@ -17,7 +17,7 @@
         <link href="css/owl.theme.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">
-        
+
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
 
@@ -68,7 +68,7 @@
             <div class="line"></div>
 
             <!-- NAVIGATION -->
-            <div class="container">
+            <div class="container myNav">
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
@@ -158,7 +158,7 @@
                                     <li class="text-uppercase clearfix">
                                         Nickel Men’s Spa
                                         <a href="javascript:void(0)" class="down pull-right"><span class="fa fa-toggle-down"></span></a>
-                                        <ul class="list-unstyled text-capitalize">
+                                        <ul class="filterList list-unstyled text-capitalize">
                                             <li>Spa Skin-Care</li>
                                             <li>Lora</li>
                                             <li>Bliss Spa</li>
@@ -168,7 +168,7 @@
                                     <li class="text-uppercase">
                                         Clarins Spa
                                         <a href="javascript:void(0)" class="down pull-right"><span class="fa fa-toggle-down"></span></a>
-                                        <ul class="list-unstyled text-capitalize">
+                                        <ul class="filterList list-unstyled text-capitalize">
                                             <li>Spa Skin-Care</li>
                                             <li>Lora</li>
                                             <li>Bliss Spa</li>
@@ -177,7 +177,7 @@
                                     <li class="text-uppercase">
                                         Anantara Spa
                                         <a href="javascript:void(0)" class="down pull-right"><span class="fa fa-toggle-down"></span></a>
-                                        <ul class="list-unstyled text-capitalize">
+                                        <ul class="filterList list-unstyled text-capitalize">
                                             <li>Spa Skin-Care</li>
                                             <li>Lora</li>
                                             <li>Bliss Spa</li>
@@ -186,7 +186,7 @@
                                     <li class="text-uppercase">
                                         Elemis Spa
                                         <a href="javascript:void(0)" class="down pull-right"><span class="fa fa-toggle-down"></span></a> 
-                                        <ul class="list-unstyled text-capitalize">
+                                        <ul class="filterList list-unstyled text-capitalize">
                                             <li>Spa Skin-Care</li>
                                             <li>Lora</li>
                                             <li>Bliss Spa</li>
@@ -195,7 +195,7 @@
                                     <li class="text-uppercase">
                                         Mandara Spa
                                         <a href="javascript:void(0)" class="down pull-right"><span class="fa fa-toggle-down"></span></a>
-                                        <ul class="list-unstyled text-capitalize">
+                                        <ul class="filterList list-unstyled text-capitalize">
                                             <li>Spa Skin-Care</li>
                                             <li>Lora</li>
                                             <li>Bliss Spa</li>
@@ -204,7 +204,7 @@
                                     <li class="text-uppercase">
                                         NATURA spa
                                         <a href="javascript:void(0)" class="down pull-right"><span class="fa fa-toggle-down"></span></a>
-                                        <ul class="list-unstyled text-capitalize">
+                                        <ul class="filterList list-unstyled text-capitalize">
                                             <li>Spa Skin-Care</li>
                                             <li>Lora</li>
                                             <li>Bliss Spa</li>
@@ -212,102 +212,349 @@
                                     </li>
                                 </ul>
                             </article>
-                            <article>
+                            <article class="price">
                                 <h5>FILTER BY PRICE</h5>
                                 <form class="formFilter">
-                                <div id="slider-range"></div>
-                                <p>
-                                    <label for="amount">Price range:</label>
-                                    <input type="text" id="amount" readonly style="border:0; color:#606060; font-weight:bold;">
-                                </p>
+                                    <div id="slider-range"></div>
+                                    <p>
+                                        <label for="amount">RANGE</label>
+                                        <input type="text" id="amount" readonly style="border:0; color:#5f5f5f;">
+                                    </p>
                                 </form>
-
+                            </article>
+                            <article class="weight">
+                                <h5>FILTER BY WEIGHT</h5>
+                                <ul class="weightBorder list-unstyled list-inline">
+                                    <li><a href="#">50gm</a></li>
+                                    <li><a href="#">100gm</a></li>
+                                    <li><a href="#">500gm</a></li>
+                                    <li><a href="#">1000gm</a></li>
+                                </ul>
+                            </article>
+                            <article class="bestSale">
+                                <div>
+                                    <figure class="center-block">
+                                        <img src="img/lumene.png" alt="" class="img-responsive"/>
+                                    </figure>
+                                    <div class="saleHover">
+                                        <h3>BEST<br>SALE OF THIS<br>WEEK</h3>
+                                        <button>SHOP NOW</button>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="bestSale">
+                                <div>
+                                    <figure class="center-block">
+                                        <img src="img/plash-daily.png" alt="" class="img-responsive"/>
+                                    </figure>
+                                    <div class="saleHover">
+                                        <h3>50% OFF<br>PLASH OIL</h3>
+                                        <button>SHOP NOW</button>
+                                    </div>
+                                </div>
                             </article>
                         </div>
-                        <div class="col-md-9">
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
-                            </div>
-                            <div class="col-sm-4">
-                                <article>
-
-                                </article>
+                        <div class="productList col-md-9">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/eminence.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Facial recovery oil</h4>  
+                                                <p>$ 100.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/spa-body.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Arctic spa body lotion</h4>  
+                                                <p>$ 130.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/aveeno.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Aveeno moisturizing lotion</h4>  
+                                                <p>$ 135.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/towel.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Tomato seed oil</h4>  
+                                                <p>$ 70.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/spa-body.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Arctic spa body lotion</h4>  
+                                                <p>$ 130.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/vitamin.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Vitamin B3 body buff</h4>  
+                                                <p>$ 140.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>     
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/night-cream.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Aveeno night cream</h4>  
+                                                <p>$ 155.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/aveeno.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Aveeno moisturizing lotion</h4>  
+                                                <p>$ 135.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>   
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/towel.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Tomato seed oil</h4>  
+                                                <p>$ 70.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/towel.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Tomato seed oil</h4>  
+                                                <p>$ 70.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/spa-body.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Arctic spa body lotion</h4>  
+                                                <p>$ 130.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                                        <figure>
+                                            <img src="img/vitamin.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                        <div class="imageHover">
+                                            <a href="#">
+                                                <h4>Vitamin B3 body buff</h4>  
+                                                <p>$ 140.00</p>
+                                            </a>
+                                            <span class="fa fa-refresh"></span>
+                                            <button>ADD TO CART</button>
+                                            <span class="fa fa-heart-o"></span>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-
-
-
-
-
+            <!-- SECTION 4 "pages" -->
+            <section class="pages">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <article>
+                                <nav  class="text-center" aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true" class="fa fa-angle-right"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </article>
+                        </div> 
+                        <div class="col-sm-4">
+                            <article class="view">
+                                <div class="btn-group">
+                                    <button type="button" class="btn">SORT BY:POPULAR</button>
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">SORT BY:POPULAR</a></li>
+                                        <li><a href="#">SORT BY:PRICE TO LOW</a></li>
+                                        <li><a href="#">SORT BY:PRICE TO HIGH</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 5 "popular" -->
             <section class="popular">
                 <h4 class="text-uppercase text-center">new arrivals</h4>
                 <img src="img/line.png" alt="" class="img-responsive center-block"/>
             </section>
 
-            <!-- SECTION 5 "arrivals -->    
+            <!-- SECTION 6 "arrivals -->    
             <section class="arrivals">
                 <div class="container">
                     <div id="owl-example" class="owl-carousel">
                         <article>
                             <div>
                                 <figure>
-                                    <img src="img/plash.png" alt="" class="img-responsive center-block"/>
+                                    <img src="img/aveeno.png" alt="" class="img-responsive center-block"/> 
+                                </figure>
+                                <div class="carouselHover">
+                                    <a href="#">
+                                        <h4>Green apple peel</h4>  
+                                        <p>$ 125.00</p>
+                                    </a>
+                                    <span class="fa fa-refresh"></span>
+                                    <button>ADD TO CART</button>
+                                    <span class="fa fa-heart-o"></span>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <figure>
+                                    <img src="img/night-cream.png" alt="" class="img-responsive center-block"/>
+                                </figure>
+                                <div class="carouselHover">
+                                    <a href="#">
+                                        <h4>Aveeno night cream</h4>  
+                                        <p>$ 155.00</p>
+                                    </a>
+                                    <span class="fa fa-refresh"></span>
+                                    <button>ADD TO CART</button>
+                                    <span class="fa fa-heart-o"></span>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <figure>
+                                    <img src="img/spa-body.png" alt="" class="img-responsive center-block"/> 
+                                </figure>
+                                <div class="carouselHover">
+                                    <a href="#">
+                                        <h4>Green apple peel</h4>  
+                                        <p>$ 125.00</p>
+                                    </a>
+                                    <span class="fa fa-refresh"></span>
+                                    <button>ADD TO CART</button>
+                                    <span class="fa fa-heart-o"></span>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <figure>
+                                    <img src="img/towel.png" alt="" class="img-responsive center-block"/>
                                 </figure>
                                 <div class="carouselHover">
                                     <a href="#">
@@ -339,55 +586,7 @@
                         <article>
                             <div>
                                 <figure>
-                                    <img src="img/spa-body.png" alt="" class="img-responsive center-block"/> 
-                                </figure>
-                                <div class="carouselHover">
-                                    <a href="#">
-                                        <h4>Green apple peel</h4>  
-                                        <p>$ 125.00</p>
-                                    </a>
-                                    <span class="fa fa-refresh"></span>
-                                    <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <figure>
-                                    <img src="img/aveeno.png" alt="" class="img-responsive center-block"/> 
-                                </figure>
-                                <div class="carouselHover">
-                                    <a href="#">
-                                        <h4>Green apple peel</h4>  
-                                        <p>$ 125.00</p>
-                                    </a>
-                                    <span class="fa fa-refresh"></span>
-                                    <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <figure>
                                     <img src="img/facial.png" alt="" class="img-responsive center-block"/>
-                                </figure>
-                                <div class="carouselHover">
-                                    <a href="#">
-                                        <h4>Green apple peel</h4>  
-                                        <p>$ 125.00</p>
-                                    </a>
-                                    <span class="fa fa-refresh"></span>
-                                    <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <figure>
-                                    <img src="img/towel.png" alt="" class="img-responsive center-block"/>
                                 </figure>
                                 <div class="carouselHover">
                                     <a href="#">
@@ -436,7 +635,7 @@
                 </div>
             </section>
 
-            <!-- SECTION 6 "shipping" -->
+            <!-- SECTION 7 "shipping" -->
             <section class="shipping">
                 <div class="container">
                     <div class="row">
@@ -468,7 +667,7 @@
 
         <!-- FOOTER -->
         <footer>
-            <!-- SECTION 7 "newsletter" -->    
+            <!-- SECTION 8 "newsletter" -->    
             <section class="newsletter">
                 <div class="container">
                     <div class="row">
@@ -507,7 +706,7 @@
                 </div>
             </section>
 
-            <!-- SECTION 8 "address" -->
+            <!-- SECTION 9 "address" -->
             <section class="address">
                 <div class="container">
                     <div class="row">
@@ -636,7 +835,7 @@
                     </div>
                 </div>
             </section>
-            <!-- SECTION 9 "rights" -->
+            <!-- SECTION 10 "rights" -->
             <section class=" rights text-center">
                 <p>2016 &REG; All Rights Reserved&CenterDot;<span>PLASH</span> Responsive Theme</p>
             </section>

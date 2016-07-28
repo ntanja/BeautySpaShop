@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 /************************************
                 HEADER
 ************************************/
@@ -360,16 +363,19 @@ main{
     left: 0;
     right: 0;
 }
-.popularProducts p{
+.popularProducts p,
+.productList p{
     color: #303030;
     font-weight: bold;
 }
-.popularProducts a{
+.popularProducts a,
+.productList a{
     color: #6cc515;
     text-decoration: none;
 }
 .popularProducts button,
-.carouselHover button{
+.carouselHover button,
+.productList button{
     color: #fff;
     background-color: #6cc515;
 }
@@ -479,8 +485,8 @@ main{
     margin-bottom: 20px;
 }
 .shipping h5{
-   font-family: 'Josefin Sans', sans-serif !important;
-   font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 600;
 }
 .shipping span{
     font-size: 35px;
@@ -659,9 +665,9 @@ main{
     color: #6cc515; 
 }
 
-/*******************************************/
-/*                  PAGE 2                 */
-/*******************************************/
+/********************************************************************/
+/*                             PAGE 2                               */
+/********************************************************************/
 
 /************************************
               SECTION 1 "frid"
@@ -674,6 +680,8 @@ main{
     margin-bottom: 30px;
 }
 .gridView{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
     position: absolute;
     top: 40%;
     margin: 0 auto;
@@ -683,28 +691,29 @@ main{
 }
 .gridView h3{
     color: #fff;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: bold;
 }
 /************************************
               SECTION 1 "view"
 ************************************/
 .view .row{
-    border: 1px solid #e8e8e8;
-    padding: 10px;
+    border: 1px solid #e8e8e8;  
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .view article{
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5f5f5f;
 }
-.view .fa{
+.view .fa-cog{
     color: #909090;
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 20px;
 }
-.view .fa:hover{
+.view .fa-cog:hover{
     color: #6cc513;
-}
-.view .fa:active{
-    color: #6cc513;
-    border: 1px solid #6cc513;
 }
 .view button{
     border: 1px solid #e8e8e8;
@@ -718,21 +727,53 @@ main{
 }
 .btn-group > .btn + .dropdown-toggle{
     padding-right: 5px;
-padding-left: 5px;
+    padding-left: 5px;
 }
 /************************************
-              SECTION 2 "filtersSelect"
+        SECTION 2 "filtersSelect"
 ************************************/
+.filtersSelect article{
+    border: 1px solid #e8e8e8;
+    padding: 5px 10px;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5f5f5f;
+}
+.filtersSelect h5{
+    font-family: 'Josefin Sans', sans-serif !important;
+    color: #5f5f5f;
+    font-weight: bold;
+}
+.categories{
+    margin-bottom: 20px;
+}
+.categories .fa-toggle-down,
+.categories fa-toggle-up{
+    color: #a0a0a0;
+    font-weight: 100;
+}
+
 ul.filter li ul{
     display: none;
 }
-.categories{
-    margin: 20px 0;
-    border: 1px solid #e8e8e8;
+ul.filterList{
+    padding-left: 10px;
+}
+/*******price range filter - start******/
+.price{
+    margin-bottom: 20px;
 }
 .formFilter{
     width: 200px;
-    margin: 0 auto;
+    padding-right: 10px;
+}
+.formFilter input,
+.formFilter label{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+.formFilter p{
+    margin-top: 10px;
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
     border: 2px solid #6bc513;
@@ -762,4 +803,266 @@ ul.filter li ul{
 }
 .ui-corner-all{
     border-radius: 0;
+}
+/*******price filter - end*******/
+
+.weight{
+    margin-bottom: 20px;
+}
+.filtersSelect article.weight{
+    padding: 5px 0;
+}
+.weight h5{
+    padding-left: 10px;
+}
+.weightBorder{
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    text-align: center;
+}
+.weightBorder a{
+    text-decoration: none;
+    padding: 0 5px;
+    color: #656565;
+}
+.weightBorder li:hover{
+    background: #6bc513;
+}
+.weightBorder a:hover{
+    color: #fff;
+}
+.weightBorder li{
+    border-right: 1px solid #e8e8e8;
+}
+.weightBorder li:last-of-type{
+    border-right: none;
+}
+.weight .list-inline {
+    margin-left: 0;
+}
+article.bestSale{
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.bestSale h3{
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: bold;
+}
+.bestSale figure{
+    position: relative;
+    height: 320px;
+    width: 200px;
+}
+.filtersSelect .bestSale img,
+.productList img{
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.saleHover button{
+    background-color: #6bc513;
+    color:#fff;
+    border: #6bc513;
+    padding: 5px 10px;
+    margin-top: 30px;
+}
+.saleHover{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    bottom: 0;
+    right:0;
+    left: 0;
+    margin: auto;
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    background-size: cover;
+}
+.filtersSelect article:hover .saleHover{
+    display: block;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.productList figure{
+    position: relative;
+    height: 320px;
+    width: 200px;
+}
+.productList article{
+    margin-bottom: 20px;
+}
+.productList p{
+    color: #303030;
+    font-weight: bold;
+}
+.productList .imageHover{
+    padding-top: 20%;
+}
+.productList article:hover .imageHover{
+    display: block;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.pages{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5f5f5f;
+}
+.pages div.row{
+    border: 1px solid #e8e8e8;  
+    margin: 0 auto;
+}
+.pagination > li > a{
+    border: none;
+    color: #a0a0a0;
+}
+.pagination > li > a:hover{
+    background: none;
+    color: #6bc513;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    color: #6bc513;
+    background: none;
+    border: none;
+}
+.pages .view{
+    text-align: center;    
+}
+
+
+/********************************************************************/
+/*                             PAGE 3                               */
+/********************************************************************/
+
+/************************************
+        SECTION 2 "singleProduct"
+************************************/
+.singleProduct h3,
+.singleProduct h4,
+.singleProduct h5{
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: bold;
+}
+.singleProduct {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 40px;
+}
+.arcticSpa h3{
+    margin-bottom: 20px;
+}
+.size ul{
+    border: 1px solid #e8e8e8;
+}
+.size{
+    margin-bottom: 30px;
+}
+.ui-spinner-input {
+    width: 40px;
+}
+.arcticSpa .stars li:first-of-type{
+    font-weight: bold;
+}
+.arcticSpa .ui-state-default, .arcticSpa .ui-button, .arcticSpa .ui-button.ui-state-disabled:hover {
+    border-left: 1px solid #e8e8e8;
+    border-radius: 0;
+    background: #fff;
+}
+.arcticSpa .ui-widget-content {
+    background: #fff;
+}
+.arcticSpa button.add{
+    border: 1px solid #313131;
+    border-left: 1px solid #313131;
+}
+.arcticSpa .fa-refresh,
+.arcticSpa .fa-heart-o{
+    color: #6bc513;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+.arcticSpa .fa-star,
+.arcticSpa .fa-star-o{
+    color: #ffae01;
+}
+.arcticSpa .fa-facebook,
+.arcticSpa .fa-twitter,
+.arcticSpa .fa-pinterest-p,
+.arcticSpa .fa-google-plus{
+    color: #595959;
+}
+.arcticSpa .fa-facebook:hover{
+    color: #3b5999;
+}
+.arcticSpa .fa-twitter:hover{
+    color: #1da1f3;
+}
+.arcticSpa .fa-pinterest-p:hover,
+.arcticSpa .fa-google-plus:hover{
+    color: #c92229;
+}
+.arcticSpa{
+    margin-top: 230px;
+}
+/************************************
+        SECTION 3 "tabulator"
+************************************/
+.tabulator{
+    margin-top: 40px;
+}
+#tabs{
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    font-family: 'Josefin Sans', sans-serif;    
+}
+#tabs p{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+#tabs .ui-widget-header {
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+    color: #333333;
+    padding: 10px 0;
+}
+#tabs .ui-widget-content .ui-state-default, #tabs .ui-widget-header .ui-state-default{
+    border: none;
+}
+#tabs .ui-state-active a, #tabs .ui-state-active a:link, #tabs .ui-state-active a:visited {
+    color: #303030;
+    text-decoration: underline;
+    font-weight: bold;
+}
+  
+
+/********************************************************************/
+/*                             PAGE 3                               */
+/********************************************************************/
+/************************************
+        SECTION 3 "ourCompany"
+************************************/
+.ourCompany figure{
+    position: relative;
+    width: 540px;
+    height: 375px;
+}
+.ourCompany img{
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
 }
