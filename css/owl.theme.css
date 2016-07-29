@@ -11,7 +11,7 @@
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
-	color: #FFF;
+	color: transparent;
 	display: inline-block;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
@@ -80,15 +80,23 @@
 
 .owl-buttons {
     position: absolute;
-    top: 50%;
+    top: 45%;
     margin-top: -10px;
     width: 100%;
 }
-.owl-next{
+.owl-theme .owl-controls .owl-buttons div.owl-next{
     position: absolute;
-    right: 0px;
+    right: -20px;
+    background: url(style-images/forward.png)no-repeat center center;
 }
-.owl-prev{
-    left: 0px;
+.owl-theme .owl-controls .owl-buttons div.owl-next:hover{
+     background: url(style-images/forward-green.png)no-repeat center center;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-prev{
+    left: -20px;
     position: absolute;
+    background: url(style-images/back.png)no-repeat center center;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-prev:hover{
+    background: url(style-images/back-green.png)no-repeat center center;
 }
