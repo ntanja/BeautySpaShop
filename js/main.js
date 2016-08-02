@@ -79,6 +79,16 @@ $(document).ready(function () {
         $("#tabs").tabs();
     });
     
-    
+    //form
     $('#html_form').validator();
+    
+     //picture view
+    $('.listView .fa-th-list').click(function(){
+        $('.twelve-p').show();
+        $('.twelve').hide();
+    });
+     $('.listView .fa-th').click(function(){
+        $('.twelve').hide();
+        $('.twelve-p').show();
+});
 });

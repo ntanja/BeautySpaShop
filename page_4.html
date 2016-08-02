@@ -47,17 +47,28 @@
                         </li>
                     </ul>
                     <ul class="account list-inline">
-                        <li>
-                            <a href="#">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 MY ACCOUNT
                                 <span class="caret"></span>
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">PROFILE</a></li>
+                                <li><a href="#">ORDERS</a></li>
+                                <li><a href="#">LOG OUT</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 LOGIN
                                 <span class="caret"></span>
                             </a>
+                            <ul class="dropdown-menu login">
+                                <li>LOGIN OR REGISTER</li>
+                                <li><button>LOGIN</button></li>
+                                <li>OR</li>
+                                <li><button class="account">CREATE ACCOUNT</button></li>
+                            </ul>
                         </li>
                     </ul>
                 </section>
@@ -66,7 +77,7 @@
 
             <!-- NAVIGATION -->
             <div class="container myNav">
-                <nav class="navbar navbar-default">
+                <nav class="navbar navbar-default navDrop">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -84,10 +95,19 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right  dropShop">
                                 <li><a href="#" class="text-uppercase">HOME</a></li>
                                 <li><a href="#" class="text-uppercase">PAGES</a></li>
-                                <li><a href="#" class="text-uppercase">SHOP</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        SHOP<span class="caret" style="color:#6cc513;"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropSpa">
+                                        <li><a href="#">SPA WOMEN</a></li>
+                                        <li><a href="#">SPA MEN</a></li>
+                                        <li><a href="#">SPA ALL</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#" class="text-uppercase">GALERY</a></li>
                                 <li><a href="#" class="text-uppercase">CONTACT</a></li>
                                 <li class="shopingCart"><a href="#"><span class="fa fa-shopping-cart"></span><span class="badge">02</span></a></li>
@@ -171,22 +191,22 @@
                             <article class="singleMember clearfix">
                                 <figure>
                                     <img src="img/team1.png" alt="" class="img-responsive center-block"/>
-                                
-                                <div class="teamMember text-center">
-                                    <h4 class="text-uppercase">SARA BROWN</h4>
-                                    <h3>MANAGER</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing 
-                                        elit, sed diam my nibh euismod tincidunt
-                                    </p>
-                                    <ul class="list-inline list-unstyled">
-                                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                    </ul>
-                                </div>
-                                    </figure>
+
+                                    <div class="teamMember text-center">
+                                        <a href="#"><h4 class="text-uppercase">SARA BROWN</h4></a>
+                                        <h3>MANAGER</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                            elit, sed diam my nibh euismod tincidunt
+                                        </p>
+                                        <ul class="list-inline list-unstyled">
+                                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                            <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
                             </article>
                         </div>
                         <div class="col-sm-4">
@@ -195,7 +215,7 @@
                                     <img src="img/team2.png" alt="" class="img-responsive center-block"/>
                                 </figure>
                                 <div class="teamMember text-center">
-                                    <h4 class="text-uppercase">BILLY CASTRO</h4>
+                                    <a href="#"><h4 class="text-uppercase">BILLY CASTRO</h4></a>
                                     <h3>MANAGER</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing 
@@ -216,7 +236,7 @@
                                     <img src="img/team3.png" alt="" class="img-responsive center-block"/>
                                 </figure>
                                 <div class="teamMember text-center">
-                                    <h4 class="text-uppercase">DAVID SMITH</h4>
+                                    <a href="#"><h4 class="text-uppercase">DAVID SMITH</h4></a>
                                     <h3>MANAGER</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing 
@@ -256,9 +276,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -272,9 +292,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -288,9 +308,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -304,9 +324,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -320,9 +340,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -336,9 +356,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -353,9 +373,9 @@
                                     <h4>Green apple peel</h4>  
                                     <p>$ 125.00</p>
                                 </a>
-                                <span class="fa fa-refresh"></span>
+                                <a href="#"><span class="fa fa-refresh"></span></a>
                                 <button>ADD TO CART</button>
-                                <span class="fa fa-heart-o"></span>
+                                <a href="#"><span class="fa fa-heart-o"></span></a>
                             </div>
                         </article>
                         <article>
@@ -368,9 +388,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -385,21 +405,21 @@
                         <div class="col-sm-4">
                             <article>
                                 <span class="fa fa-truck"></span>
-                                <h5>FREE SHIPPING</h5>
+                                <a href="#"><h5>FREE SHIPPING</h5></a>
                                 <p>Lorem ipsum dummy text here</p>
                             </article>
                         </div>
                         <div class="col-sm-4">
                             <article>
                                 <span class="fa fa-check-square"></span>
-                                <h5>MONEYBACK GUARANTEE</h5>
+                                <a href="#"><h5>MONEYBACK GUARANTEE</h5></a>
                                 <p>Lorem ipsum dummy text here</p>
                             </article>
                         </div>
                         <div class="col-sm-4">
                             <article>
                                 <span class="fa fa-headphones"></span>
-                                <h5>ONLINE SUPPORT</h5>
+                                <a href="#"><h5>ONLINE SUPPORT</h5></a>
                                 <p>24/7 Lorem ipsum dummy support</p>
                             </article>
                         </div>
@@ -469,7 +489,7 @@
                                         <p class="map"><span class="fa fa-phone"></span>&nbsp; +00880-444 222 333</p>
                                     </li>
                                     <li>
-                                        <p class="map"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</p>
+                                        <p class="map"><a href="mailto:contact@plashbeauty.com"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</a></p>
                                     </li>
                                 </ul>
                             </article>

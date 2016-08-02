@@ -17,12 +17,12 @@
         <link href="css/owl.theme.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/main.css">
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
-        
+
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
 
-    <!-- HEADER -->
+        <!-- HEADER -->
         <header>
             <div class="container">
                 <section class="headerTop clearfix">
@@ -47,26 +47,37 @@
                         </li>
                     </ul>
                     <ul class="account list-inline">
-                        <li>
-                            <a href="#">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 MY ACCOUNT
                                 <span class="caret"></span>
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">PROFILE</a></li>
+                                <li><a href="#">ORDERS</a></li>
+                                <li><a href="#">LOG OUT</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 LOGIN
                                 <span class="caret"></span>
                             </a>
+                            <ul class="dropdown-menu login">
+                                <li>LOGIN OR REGISTER</li>
+                                <li><button>LOGIN</button></li>
+                                <li>OR</li>
+                                <li><button class="account">CREATE ACCOUNT</button></li>
+                            </ul>
                         </li>
                     </ul>
                 </section>
             </div>
             <div class="line"></div>
 
-        <!-- NAVIGATION -->
+            <!-- NAVIGATION -->
             <div class="container myNav">
-                <nav class="navbar navbar-default">
+                <nav class="navbar navbar-default navDrop">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -84,10 +95,19 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right  dropShop">
                                 <li><a href="#" class="text-uppercase">HOME</a></li>
                                 <li><a href="#" class="text-uppercase">PAGES</a></li>
-                                <li><a href="#" class="text-uppercase">SHOP</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        SHOP<span class="caret" style="color:#6cc513;"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropSpa">
+                                        <li><a href="#">SPA WOMEN</a></li>
+                                        <li><a href="#">SPA MEN</a></li>
+                                        <li><a href="#">SPA ALL</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#" class="text-uppercase">GALERY</a></li>
                                 <li><a href="#" class="text-uppercase">CONTACT</a></li>
                                 <li class="shopingCart"><a href="#"><span class="fa fa-shopping-cart"></span><span class="badge">02</span></a></li>
@@ -99,7 +119,7 @@
         </header>
         <main>
 
-        <!-- CAROUSEL -->
+            <!-- CAROUSEL -->
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -159,7 +179,7 @@
                 </a>
             </div>
 
-        <!-- SECTION 1 "tonic" -->
+            <!-- SECTION 1 "tonic" -->
             <section class="tonic">
                 <div class="container">
                     <div class="row">
@@ -217,13 +237,13 @@
                 </div>
             </section>
 
-        <!-- SECTION 2 -->
+            <!-- SECTION 2 -->
             <section class="popular">
                 <h4 class="text-uppercase text-center">most popular products</h4>
                 <img src="img/line.png" alt="" class="img-responsive center-block"/>
             </section>
 
-        <!-- SECTION 3 "pupularProducts -->
+            <!-- SECTION 3 "pupularProducts -->
             <section class="popularProducts">
                 <div class="container">
                     <div class="row">
@@ -237,9 +257,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </article>
                         </div>
@@ -253,9 +273,9 @@
                                         <h4>Facial recovery oil</h4>  
                                         <p>$ 100.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </article>
                         </div>
@@ -269,9 +289,9 @@
                                         <h4>Arctic spa body lotion</h4>  
                                         <p>$ 130.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </article>
                         </div>
@@ -285,9 +305,9 @@
                                         <h4>Aveeno moisturizing lotion</h4>  
                                         <p>$ 135.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </article>
                         </div>
@@ -301,9 +321,9 @@
                                         <h4>Facial recovery oil</h4>  
                                         <p>$ 110.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </article>
                         </div>
@@ -317,9 +337,9 @@
                                         <h4>Tomato seed oil</h4>  
                                         <p>$ 70.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </article>
                         </div>
@@ -333,9 +353,9 @@
                                         <h4>Body lotion spa</h4>  
                                         <p>$ 120.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </article>
                         </div>
@@ -349,9 +369,9 @@
                                         <h4>Vitamin B3 body buff</h4>  
                                         <p>$ 140.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </article>
                         </div>
@@ -359,7 +379,7 @@
                 </div>
             </section>
 
-        <!-- SECTION 4 "plashOil -->
+            <!-- SECTION 4 "plashOil -->
             <section class="plashOil">
                 <div class="container">
                     <div class="row">
@@ -400,8 +420,8 @@
                 <h4 class="text-uppercase text-center">new arrivals</h4>
                 <img src="img/line.png" alt="" class="img-responsive center-block"/>
             </section>
-            
-        <!-- SECTION 5 "arrivals -->    
+
+            <!-- SECTION 5 "arrivals -->    
             <section class="arrivals">
                 <div class="container">
                     <div id="owl-example" class="owl-carousel">
@@ -415,9 +435,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -431,9 +451,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -447,9 +467,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -463,9 +483,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -479,9 +499,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span></a>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -495,9 +515,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -512,9 +532,9 @@
                                     <h4>Green apple peel</h4>  
                                     <p>$ 125.00</p>
                                 </a>
-                                <span class="fa fa-refresh"></span>
+                                <a href="#"><span class="fa fa-refresh"></span>
                                 <button>ADD TO CART</button>
-                                <span class="fa fa-heart-o"></span>
+                                <a href="#"><span class="fa fa-heart-o"></span></a>
                             </div>
                         </article>
                         <article>
@@ -527,9 +547,9 @@
                                         <h4>Green apple peel</h4>  
                                         <p>$ 125.00</p>
                                     </a>
-                                    <span class="fa fa-refresh"></span>
+                                    <a href="#"><span class="fa fa-refresh"></span>
                                     <button>ADD TO CART</button>
-                                    <span class="fa fa-heart-o"></span>
+                                    <a href="#"><span class="fa fa-heart-o"></span></a>
                                 </div>
                             </div>
                         </article>
@@ -537,28 +557,28 @@
                 </div>
             </section>
 
-        <!-- SECTION 6 "shipping" -->
+            <!-- SECTION 6 "shipping" -->
             <section class="shipping">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
                             <article>
                                 <span class="fa fa-truck"></span>
-                                <h5>FREE SHIPPING</h5>
+                                <a href="#"><h5>FREE SHIPPING</h5></a>
                                 <p>Lorem ipsum dummy text here</p>
                             </article>
                         </div>
                         <div class="col-sm-4">
                             <article>
                                 <span class="fa fa-check-square"></span>
-                                <h5>MONEYBACK GUARANTEE</h5>
+                                <a href="#"><h5>MONEYBACK GUARANTEE</h5></a>
                                 <p>Lorem ipsum dummy text here</p>
                             </article>
                         </div>
                         <div class="col-sm-4">
                             <article>
                                 <span class="fa fa-headphones"></span>
-                                <h5>ONLINE SUPPORT</h5>
+                                <a href="#"><h5>ONLINE SUPPORT</h5></a>
                                 <p>24/7 Lorem ipsum dummy support</p>
                             </article>
                         </div>
@@ -566,10 +586,10 @@
                 </div>
             </section>
         </main>
-    
-    <!-- FOOTER -->
+
+        <!-- FOOTER -->
         <footer>
-        <!-- SECTION 7 "newsletter" -->    
+            <!-- SECTION 7 "newsletter" -->    
             <section class="newsletter">
                 <div class="container">
                     <div class="row">
@@ -607,8 +627,8 @@
                     </div>
                 </div>
             </section>
-        
-        <!-- SECTION 8 "address" -->
+
+            <!-- SECTION 8 "address" -->
             <section class="address">
                 <div class="container">
                     <div class="row">
@@ -628,7 +648,7 @@
                                         <p class="map"><span class="fa fa-phone"></span>&nbsp; +00880-444 222 333</p>
                                     </li>
                                     <li>
-                                        <p class="map"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</p>
+                                        <p class="map"><a href="mailto:contact@plashbeauty.com"><span class="fa fa-envelope"></span>&nbsp; contact@plashbeauty.com</a></p>
                                     </li>
                                 </ul>
                             </article>
@@ -737,7 +757,7 @@
                     </div>
                 </div>
             </section>
-        <!-- SECTION 9 "rights" -->
+            <!-- SECTION 9 "rights" -->
             <section class=" rights text-center">
                 <p>2016 &REG; All Rights Reserved&FilledVerySmallSquare;<span>PLASH</span> Responsive Theme</p>
             </section>

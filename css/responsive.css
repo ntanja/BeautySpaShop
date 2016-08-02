@@ -7,6 +7,10 @@
     .myNav .navbar-toggle {
         display: none;
     }
+    .nav {
+        background: transparent;
+        border-top: none;
+    }
     .headerTop{
         padding: 10px 0;
     }
@@ -77,6 +81,35 @@
     .productList .imageHover{
         padding-top: 50%;
     }
+    div.listView{
+        display: block;
+        float: left;
+    }
+    div.cog{
+        display: none;
+    }
+    /******************************PAGE 2_1***********************/
+    .view article.list{
+        text-align: left;
+    }
+    .aboutProduct button{
+        padding: 15px 30px;
+    }
+    .aboutProduct .fa-refresh,
+    .aboutProduct .fa-heart-o{
+        padding: 20px;
+        font-size: 25px;
+    }
+    .viewDown{
+        text-align: right;
+        padding-top: 20px;
+    }
+    .pagination{
+        margin: 20px 0;
+    }
+    .pagesList .listView{
+        text-align: left;
+    }
     /******************************PAGE 4***********************/
     .singleMember .teamMember{
         padding-top: 10%;
@@ -124,7 +157,7 @@
         padding: 0;
         font-size: 10px;
     }
-    .filtersSelect article{
+    .filtersSelect .skinCare article{
         padding: 30px 5px;
     }
     .filtersSelect article.weight{
@@ -147,6 +180,10 @@
     }
     .productList article{
         padding: 0;
+    }
+    /******************************PAGE 2_1*********************/
+    article.listView{
+        text-align: left;
     }
     /******************************PAGE 3***********************/
     .singleProduct {
@@ -353,7 +390,7 @@
         width: 100%;
         height: 500px;
     }
-    
+
 }
 
 
