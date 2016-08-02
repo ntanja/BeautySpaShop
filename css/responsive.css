@@ -88,6 +88,9 @@
     div.cog{
         display: none;
     }
+    .skinCare{
+        display: block;
+    }
     /******************************PAGE 2_1***********************/
     .view article.list{
         text-align: left;

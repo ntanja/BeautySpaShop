@@ -798,6 +798,9 @@ main{
 /************************************
         SECTION 2 "filtersSelect"
 ************************************/
+.menuHide{
+    display: none;
+}
 .filtersSelect .skinCare article,
 .twelve article{
     border: 1px solid #e8e8e8;
@@ -1081,7 +1084,7 @@ article.bestSale{
 }
 .aboutProduct .fa-refresh,
 .aboutProduct .fa-heart-o{
-    color: #6bc513;
+    color: #333;
     padding: 10px;
     font-size: 20px;
 }
@@ -1130,9 +1133,9 @@ div.listView{
 .pagesList .listView{
     text-align: center;
 }
-/*.twelve-p{
+.twelve-p{
     display: none;
-}*/
+}
 /********************************************************************/
 /*                             PAGE 3                               */
 /********************************************************************/
@@ -1185,10 +1188,11 @@ div.listView{
 }
 .arcticSpa .fa-refresh,
 .arcticSpa .fa-heart-o{
-    color: #6bc513;
+    color: #333;
     padding: 0 10px;
     margin-bottom: 30px;
 }
+
 .arcticSpa .fa-star,
 .arcticSpa .fa-star-o,
 .aboutProduct .fa-star,
@@ -1263,7 +1267,7 @@ a.up, a.down{
     border-radius: 0;
 }
 .productQuantity input{
-    padding: 10px 0;
+    padding: 12px 0;
     width: 50px;
     text-align: center;
     border: 1px solid #ccc;
@@ -1380,4 +1384,30 @@ a.up, a.down{
 }
 .ftr{
     margin-top: -5px;
+}
+.fa-heart-o{
+    color: #333;
+}
+.fa-heart{
+    color: #6bc513 !important;
+}
+.fa-refresh{
+    color: #333;
+}
+.faGreen{
+    color: #6bc513 !important;
+}
+/********************************************************************/
+/*                   REGISTRATION PAGE                              */
+/********************************************************************/
+.popReg{
+    margin-top: 200px;
+}
+.registration{
+    margin-top: 30px;
+}
+.register .nav-tabs > li {
+    float: none;
+    margin-bottom: -1px;
+    display: inline-block;
 }

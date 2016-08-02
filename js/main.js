@@ -78,17 +78,31 @@ $(document).ready(function () {
     $(function () {
         $("#tabs").tabs();
     });
+
+    //toggle menuHide
+    $('span.fa-cog').click(function(){
+        $('.menuHide').toggle();
+    });
+
+
+    //change color on click
+    $('.fa-heart-o').click(function () {
+        $(this).toggleClass('fa-heart-o fa-heart');
+    });
     
-    //form
-    $('#html_form').validator();
-    
-     //picture view
-    $('.listView .fa-th-list').click(function(){
+    $('.fa-refresh').click(function () {
+        $(this).toggleClass('faGreen');
+    });
+
+    //picture view
+    $('.listView .fa-th-list').click(function () {
         $('.twelve-p').show();
         $('.twelve').hide();
     });
-     $('.listView .fa-th').click(function(){
-        $('.twelve').hide();
-        $('.twelve-p').show();
-});
+    $('.listView .fa-th').click(function () {
+        $('.twelve-p').hide();
+        $('.twelve').show();
+    });
+    //form
+    $('#html_form').validator();
 });
