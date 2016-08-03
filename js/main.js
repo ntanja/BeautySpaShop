@@ -103,6 +103,18 @@ $(document).ready(function () {
         $('.twelve-p').hide();
         $('.twelve').show();
     });
+    
+    //prikazivanje sadrzaja korpe, drugi zadatak
+
+    $('.shopingCart').click(function () {
+        $('.cartProducts').toggle();
+    });
+
+    $('.remove').click(function () {
+        $(this).parent().parent().hide();
+
+    });
+    
     //form
     $('.html_form').validator();
 });
