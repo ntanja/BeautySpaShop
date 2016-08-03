@@ -55,7 +55,7 @@ $(document).ready(function () {
     });
 
     //spinner 
-    $('.productQuantity span a.down').click(function () {
+    $('.productQuantity span a.decrease').click(function () {
         var txt = $('.productQuantity input').val();
 
         if (txt <= 1) {
@@ -67,7 +67,7 @@ $(document).ready(function () {
 
     });
 
-    $('.productQuantity span a.up').click(function () {
+    $('.productQuantity span a.increase').click(function () {
         var txt = $('.productQuantity input').val();
         txt++;
         $('.productQuantity input').val(txt);
