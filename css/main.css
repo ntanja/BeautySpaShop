@@ -1553,6 +1553,7 @@ a.increase, a.decrease{
     float:left;
     margin-right: 11px;
 }
+
 .tabForm .date select:last-of-type{
     margin-right: 0;
 }
