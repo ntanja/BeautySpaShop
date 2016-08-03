@@ -41,22 +41,22 @@ header{
 .headerTop .account .login{
     text-align: center;
 }
-.login button{
-    padding: 5px 10px;
+.login a.accLog{
     color: #fff;
     background-color: #6bc513;
     border: 1px solid #6bc513;
 }
-.login button:hover{
+.login a.accLog:hover{
     background-color: #fff;
     color: #6bc513;
 }
-.login button.account{
+.login a.account{
     background-color: #fff;
     color: #000;
+    font-weight: bold;
     border: 1px solid #000;
 }
-.login button.account:hover{
+.login a.account:hover{
     background-color: #fff;
     border: 1px solid #6bc513; 
     color: #6bc513;
@@ -1410,4 +1410,167 @@ a.up, a.down{
     float: none;
     margin-bottom: -1px;
     display: inline-block;
+}
+
+/********************************************************************/
+/*                   LOGIN PAGE                              */
+/********************************************************************/
+.logPg{
+    margin-top: 200px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+.logPg h3{
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: bold;
+}
+.logPg form{
+    width: 90%;
+    max-width: 350px;
+}
+.logPg button,
+.tabForm button{
+    padding: 10px;
+    background: #6bc513;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #6bc513;
+    width: 250px;
+}
+.logPg button:hover,
+.tabForm button:hover{
+    background: #3c763d;
+    border: 1px solid #3c763d;
+}
+.logPg input,
+.tabForm input{
+    border: 1px solid #e8e8e8;
+    box-shadow: inset 0px 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    height: 40px;
+}
+.logPg a.code{
+    color: red;
+    padding-right: 30px;
+}
+.logPg .form-control:focus{
+    border-color: #6bc513;
+}
+.jumbotron h3{
+    margin-top: 0;
+}
+.jumbotron p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.jumbotron .phone{
+    width: 200px;
+    text-align: right;
+}
+.jumbotron a{
+    color: #333;
+}
+
+/********************************************************************/
+/*                   REGISTRATION PAGE                              */
+/********************************************************************/
+.register a:focus{
+    outline: none;
+}
+.registration .nav li a{
+    color: #333;
+    font-size: 20px;
+}
+.registration .nav li a:focus,
+.registration .nav li a:hover{
+    background: #fff;
+    color: #6cc513;
+}
+.tabForm .form-control:focus{
+    border: 1px solid #6cc513;
+}
+.tabForm form{
+    width: 700px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.tabForm input{
+    position: relative;
+    height: 40px;
+}
+.tabForm .required{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #e41913;
+    font-size: 20px;
+    font-weight: bold;     
+}
+.tabForm select{
+    height: 40px;
+    position: relative;
+    border: 1px solid #e8e8e8;
+}
+.tabForm h4{
+    float: left;
+    padding-right: 10px;
+}
+.tabForm .radio-inline{
+    padding-top: 15px;
+}
+#male, #female{
+    top:0;
+}
+.tabForm  select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    font-size: .9em;
+    background: url(style-images/arrow.png)no-repeat right 8px;
+    background-size: 20px 20px;
+    padding: 5px 10px 5px 5px;   
+    border: 1px solid #e8e8e8;
+    color: #999;
+}
+.tabForm  select::-ms-expand{
+    display: none;
+}
+.tabForm .date select{
+    width: 60px;
+    float:left;
+    margin-right: 11px;
+}
+.tabForm .date select:last-of-type{
+    margin-right: 0;
+}
+.date{
+    margin-bottom: 20px;
+}
+.red{
+    color: #e41913;
+    font-size: 16px;
+}
+.tabForm img{
+    margin-top: 10px;
+}
+.tabForm .checkbox input{
+    position: relative;
+}
+.tabForm .checkbox label{
+    position: relative;
+}
+.tabForm .checkbox p{
+    margin-top: -35px;
+    font-size: 13px;
+}
+.tabForm .checkbox .required{
+    top: 10px;
+    right: -15px;
+}
+.cDown{
+    margin-top: 50px;
 }

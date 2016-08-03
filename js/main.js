@@ -104,5 +104,5 @@ $(document).ready(function () {
         $('.twelve').show();
     });
     //form
-    $('#html_form').validator();
+    $('.html_form').validator();
 });

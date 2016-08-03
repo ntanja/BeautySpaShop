@@ -68,9 +68,9 @@
                             </a>
                             <ul class="dropdown-menu login">
                                 <li>LOGIN OR REGISTER</li>
-                                <li><button>LOGIN</button></li>
+                                <li><a href="log_in.html" class="accLog">LOGIN</a></li>
                                 <li>OR</li>
-                                <li><button class="account">CREATE ACCOUNT</button></li>
+                                <li><a href="register.html" class="account">CREATE ACCOUNT</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -121,32 +121,61 @@
             </div>
         </header>
         <main>
-            <section class="popReg">
-                <h3 class="text-uppercase text-center">Otvorite nalog</h3>
-                <img src="img/line.png" alt="" class="img-responsive center-block"/>
-            </section>
-            
-            <section class="register">
+            <section class="logPg">
                 <div class="container">
-                    <p class="text-center">
-                        Popunite obrazac i otvorite korisnički račun. Molimo Vas da Vašu lozinku 
-                        čuvate u tajnosti.Polja označena znakom * potrebno je obavezno popuniti.
-                    </p>
-                    <div class="registration">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs text-center" role="tablist">
-                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Fizičko lice</a></li>
-                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Pravno lice</a></li>
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane" id="messages">.3..</div>
-                            <div role="tabpanel" class="tab-pane" id="settings">..4.</div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <article>
+                                <h3>Prijavite se</h3>
+                                <form class="html_form" data-toggle="validator" role="form">
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="control-label sr-only"></label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email addresa je neispravna" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="control-label sr-only"></label>
+                                        <input type="password" data-minlength="" class="form-control" id="inputPassword" placeholder="Lozinka" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">Potvrdi</button>
+                                    </div>
+                                </form>
+                                <a href="#" class="code pull-right">Zaboravili ste lozinku?</a>
+                            </article>
+                        </div>
+                        <div class="col-md-7 col-md-offset-1">
+                            <article>
+                                <div class="jumbotron">
+                                    <h3>Zaštita podataka</h3> 
+                                    <p>
+                                        Donec id elit non mi porta gravida at eget metus. 
+                                        Fusce dapibus, tellus ac cursus commodo, tortor 
+                                        mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    </p> 
+                                    <p>
+                                        Donec id elit non mi porta gravida at eget metus. 
+                                        Fusce dapibus, tellus ac cursus commodo, tortor 
+                                        mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    </p> 
+                                    <ul class="list-unstyled phone">
+                                        <li>Beograd</li>
+                                        <li>Tel. 011/1234-567,</li>
+                                        <li>011/1234-568</li>
+                                        <li>Fax. 011/1234-569</li>
+                                        <li>
+                                            Email.
+                                            <a href="mailto:maxionline@delhaize.rs">maxionline@delhaize.rs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
             </section>
+
+
 
 
         </main>
