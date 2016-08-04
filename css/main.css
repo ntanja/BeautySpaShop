@@ -1088,6 +1088,10 @@ article.bestSale{
     padding: 10px;
     font-size: 20px;
 }
+.aboutProduct .fa-heart{
+    padding: 20px;
+    font-size: 25px;
+}
 .pagesList{
     font-family: 'Josefin Sans', sans-serif;
     color: #5f5f5f;
@@ -1191,6 +1195,9 @@ div.listView{
     color: #333;
     padding: 0 10px;
     margin-bottom: 30px;
+}
+.arcticSpa .fa-heart{
+    padding: 0 10px;
 }
 
 .arcticSpa .fa-star,

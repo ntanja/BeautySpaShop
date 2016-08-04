@@ -90,9 +90,7 @@ $(document).ready(function () {
         $(this).toggleClass('fa-heart-o fa-heart');
     });
     
-    $('.fa-refresh').click(function () {
-        $(this).toggleClass('faGreen');
-    });
+    
 
     //picture view
     $('.listView .fa-th-list').click(function () {
