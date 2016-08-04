@@ -182,15 +182,17 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputName" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputName" placeholder="Ime" required>
+                                                <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputName" placeholder="Ime" data-error="Molimo unesite ime" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputLastName" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputLastName" placeholder="Prezime" required>
+                                                <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputLastName" placeholder="Prezime" data-error="Molimo unesite prezime" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -198,15 +200,17 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputStreet" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputStreet" placeholder="Ulica" required>
+                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputStreet" placeholder="Ulica" data-error="Molimo unesite naziv ulicu" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-2">
                                             <div class="form-group">
                                                 <label for="inputNumber" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputNumber" placeholder="Broj" required>
+                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputNumber" placeholder="Broj" data-error="Molimo unesite broj" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -251,8 +255,9 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputPhone" class="control-label sr-only"></label>
-                                                <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone" placeholder="Kontakt telefon" required>
+                                                <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone" placeholder="Kontakt telefon" data-error="Molimo unesite ispravan telefon" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -459,8 +464,9 @@
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label for="inputCode" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCode" placeholder="Unesite kod sa slike" required>
+                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCode" placeholder="Unesite kod sa slike" data-error="Molimo unesite ispravan kod" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                                 <a href="#"><img src="img/code.png" alt="" class="img-responsive center-block"/></a>
                                             </div>
                                         </div>
@@ -500,7 +506,7 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputCompany" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCompany" placeholder="Naziv firme" required data-error="">
+                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCompany" placeholder="Naziv firme" data-error="Molimo unesite naziv firme" required data-error="">
                                                 <span class="required">*</span>
                                              <div class="help-block with-errors"></div>
                                             </div>
@@ -508,8 +514,9 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputPib" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputPib" placeholder="PIB" required>
+                                                <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPib" placeholder="PIB" data-error="Molimo unesite ispravan PIB" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -517,15 +524,17 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputCName" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z]{1,}$"  class="form-control" id="inputCName" placeholder="Ime" required>
+                                                <input type="text" pattern="^[_A-z]{1,}$"  class="form-control" id="inputCName" placeholder="Ime" data-error="Molimo unesite ime" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputCLast" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z]{1,}$"  class="form-control" id="inputCLast" placeholder="Prezime" required>
+                                                <input type="text" pattern="^[_A-z]{1,}$"  class="form-control" id="inputCLast" placeholder="Prezime" data-error="Molimo unesite prezime" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -533,15 +542,17 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputCStreet" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCStreet" placeholder="Ulica" required>
+                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCStreet" placeholder="Ulica" data-error="Molimo unesite ulicu" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-2">
                                             <div class="form-group">
                                                 <label for="inputCNumber" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCNumber" placeholder="Broj" required>
+                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCNumber" placeholder="Broj" data-error="Molimo unesite broj" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -586,8 +597,9 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="inputCPhone" class="control-label sr-only"></label>
-                                                <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCPhone" placeholder="Kontakt telefon" required>
+                                                <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputCPhone" placeholder="Kontakt telefon" data-error="Molimo unesite ispravan broj telefona" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -625,8 +637,9 @@
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label for="CodeC" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="CodeC" placeholder="Unesite kod sa slike" required>
+                                                <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="CodeC" placeholder="Unesite kod sa slike" data-error="Molimo unesite ispravan kod" required>
                                                 <span class="required">*</span>
+                                                <div class="help-block with-errors"></div>
                                                 <a href="#"><img src="img/code.png" alt="" class="img-responsive center-block"/></a>
                                             </div>
                                         </div>
