@@ -1400,23 +1400,9 @@ a.increase, a.decrease{
 .faGreen{
     color: #6bc513 !important;
 }
-/********************************************************************/
-/*                   REGISTRATION PAGE                              */
-/********************************************************************/
-.popReg{
-    margin-top: 200px;
-}
-.registration{
-    margin-top: 30px;
-}
-.register .nav-tabs > li {
-    float: none;
-    margin-bottom: -1px;
-    display: inline-block;
-}
 
 /********************************************************************/
-/*                   LOGIN PAGE                              */
+/*                   LOGIN PAGE                                      */
 /********************************************************************/
 .logPg{
     margin-top: 200px;
@@ -1451,16 +1437,35 @@ a.increase, a.decrease{
 .logPg input,
 .tabForm input{
     border: 1px solid #e8e8e8;
-    box-shadow: inset 0px 4px 8px rgba(0,0,0,0.1);
     padding: 10px;
-    height: 40px;
+    height: 34px;
+    opacity: 0.5;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
 .logPg a.code{
     color: red;
     padding-right: 30px;
 }
 .logPg .form-control:focus{
     border-color: #6bc513;
+}
+.logMail{
+    position: relative;
+}
+.logPg input#inputPassword{
+    position: relative;
+}
+.logPg span.showPass{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.logMail .input-group-addon {
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 .jumbotron h3{
     margin-top: 0;
@@ -1480,6 +1485,21 @@ a.increase, a.decrease{
 /********************************************************************/
 /*                   REGISTRATION PAGE                              */
 /********************************************************************/
+.popReg{
+    margin-top: 200px;
+}
+.registration{
+    margin-top: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.popReg h3{
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+.register .nav-tabs > li {
+    float: none;
+    margin-bottom: -1px;
+    display: inline-block;
+}
 .register a:focus{
     outline: none;
 }
@@ -1495,6 +1515,10 @@ a.increase, a.decrease{
     background: #fff;
     color: #6cc513;
 }
+.registration .nav-tabs li a.active {
+    border: 1px solid #e8e8e8;
+    border-bottom: transparent;
+}
 .tabForm .form-control:focus,
 .pass .form-control:focus{
     border: 1px solid #6cc513;
@@ -1507,7 +1531,7 @@ a.increase, a.decrease{
 }
 .tabForm input{
     position: relative;
-    height: 40px;
+    height: 34px;
 }
 .tabForm .required{
     position: absolute;
@@ -1518,10 +1542,14 @@ a.increase, a.decrease{
     font-weight: bold;     
 }
 .tabForm select{
-    height: 40px;
+    height: 34px;
     position: relative;
     border: 1px solid #e8e8e8;
     margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.tabForm .checkbox label {
+    font-size: 15px;
 }
 .tabForm h4{
     float: left;
@@ -1591,7 +1619,7 @@ a.increase, a.decrease{
     margin-top: 50px;
 }
 /********************************************************************/
-/*                   REGISTRATION PAGE                              */
+/*                   FORGOT PASSWORD PAGE                              */
 /********************************************************************/
 .pass {
     margin-top: 30px;

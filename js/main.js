@@ -115,6 +115,21 @@ $(document).ready(function () {
 
     });
     
+    //show-hide password
+    $('.showPass').click(function () {
+        $(this).toggleClass('fa-eye fa-eye-slash');
+        
+        var type = $(this).parent().siblings().attr('type');
+        
+        
+        if(type == 'password'){
+            $(this).parent().siblings().attr('type', 'text');
+        }else{
+            $(this).parent().siblings().attr('type', 'password');
+        }
+        
+     });
+    
     //form
-    $('.html_form').validator();
+    $('.html_form, .html_form2').validator();
 });
