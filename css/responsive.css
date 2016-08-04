@@ -117,6 +117,10 @@
     .singleMember .teamMember{
         padding-top: 10%;
     }
+    /***********************SHOPPING CART***********************/
+    .cartProducts{
+    top: 70px;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -396,6 +400,10 @@
     /***************************LOGIN PAGE***********************/
     .logPg button{
         width: 300px;
+    }
+        /************************SHOPPING CART***********************/
+    .cartProducts{
+        top: 150px;
     }
 }
 
