@@ -131,5 +131,6 @@ $(document).ready(function () {
      });
     
     //form
-    $('.html_form, .html_form2').validator();
+    $('.html_form').validator();
+    $('.html_form2').validator();
 });

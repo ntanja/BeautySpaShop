@@ -51,7 +51,7 @@
   Validator.DEFAULTS = {
     delay: 500,
     html: false,
-    disable: false,
+    disable: true,
     focus: true,
     custom: {},
     errors: {
