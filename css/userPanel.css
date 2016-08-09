@@ -1,0 +1,36 @@
+.user{
+    margin: 200px 0 100px;
+}
+.user .fa-user{
+    background: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 10px 15px;
+    margin-top: 40px;
+}
+.user #myData1 .row{
+    background-color: #6cc513;
+    opacity: 0.8;
+    padding: 10px 0;
+}
+#myData1{
+    z-index: 10;
+}
+ form{
+    max-width: 90%;
+}
+.user #changePass .form-group{
+    position: relative;
+    max-width: 400px;
+}
+.user #changePass .requiredField{
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    color: #e41913;
+    font-size: 20px;
+    font-weight: bold;     
+}
