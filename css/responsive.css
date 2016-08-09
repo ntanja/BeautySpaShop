@@ -92,6 +92,9 @@
         display: block;
     }
     /******************************PAGE 2_1***********************/
+    .menuHide{
+        display: block;
+    }
     .view article.list{
         text-align: left;
     }
