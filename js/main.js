@@ -80,7 +80,7 @@ $(document).ready(function () {
     });
 
     //toggle menuHide
-    $('span.fa-cog').click(function(){
+    $('span.fa-cog').click(function () {
         $('.menuHide').toggle();
     });
 
@@ -89,8 +89,8 @@ $(document).ready(function () {
     $('.fa-heart-o').click(function () {
         $(this).toggleClass('fa-heart-o fa-heart');
     });
-    
-    
+
+
 
     //picture view
     $('.listView .fa-th-list').click(function () {
@@ -101,7 +101,7 @@ $(document).ready(function () {
         $('.twelve-p').hide();
         $('.twelve').show();
     });
-    
+
     //prikazivanje sadrzaja korpe, drugi zadatak
 
     $('.shopingCart').click(function () {
@@ -112,22 +112,40 @@ $(document).ready(function () {
         $(this).parent().parent().hide();
 
     });
-    
+
     //show-hide password
     $('.showPass').click(function () {
         $(this).toggleClass('fa-eye fa-eye-slash');
-        
+
         var type = $(this).parent().siblings().attr('type');
-        
-        
-        if(type == 'password'){
+
+
+        if (type == 'password') {
             $(this).parent().siblings().attr('type', 'text');
-        }else{
+        } else {
             $(this).parent().siblings().attr('type', 'password');
         }
-        
-     });
+
+    });
+
+    //userPanel
+    //show text area
+    $('button.reply').click(function () {
+        $('form.textReply').show();
+    });
     
+    //show-hide product history
+    $('.showHistory').click(function () {
+        var txt = $(this).text();
+        $('.userProducts tbody tr:first-of-type + tr').nextAll('tr').toggle();
+        if (txt == 'PRIKAZI CELU ISTORIJU') {
+            $(this).text('SAKRIJ ISTORIJU');
+        } else {
+            $(this).text('PRIKAZI CELU ISTORIJU');
+        }
+    });
+    //userPage end
+
     //form
     $('.html_form').validator();
     $('.html_form2').validator();
