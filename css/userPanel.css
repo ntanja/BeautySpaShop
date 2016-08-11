@@ -1,3 +1,5 @@
+
+/****************USER PAGE************/
 .user{
     margin: 150px 0 100px;
     font-family: 'Josefin Sans', sans-serif;
@@ -173,11 +175,106 @@ form.textReply{
     display: table-row;
 }
 
+/****************ERROR PAGE************/
+
+.errorPage p{
+    font-size: 50px;
+    color: #333;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.errorPage p:first-of-type{
+    font-weight: bolder;
+    font-size: 100px;
+    color: #6cc513;
+    margin-top: 50px;
+}
+.errorPage a{
+    display: block;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+.errorPage a:hover{
+    color: #6cc513;
+}
+/*************SHOPPING CART PAGE************/
+.myShopCart{
+    margin-bottom: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.myShopCart h3{
+    border-bottom: 2px solid #6cc513;
+    margin-bottom: 20px;
+}
+.myShopCart .table-responsive{
+    border: none;
+}
+.myCart figure{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.myCart img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.myCart a.remove{
+    display: block;
+    text-decoration: none;
+    color: gray;
+}
+.myShopCart p{
+    text-align: right;
+}
+.myShopCart .myLinks a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc513;
+    border-radius: 5px;
+    background: #6cc513;
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+.myShopCart .myLinks a:hover{
+    color: #6cc513;
+    background: #fff;
+}
 
 
-
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /****************ERROR PAGE************/
+    .errorPage p{
+        margin-top: 250px;
+        font-size: 70px;
+        display: inline-block;
+    }
+    .errorPage p:first-of-type{
+        font-size: 200px;
+        padding-right: 40px;
+    }
+    /*************SHOPPING CART PAGE************/
+    .myShopCart{
+        margin-top: 150px;
+    }
+    .myCart figure{
+        width: 100px;
+        height: 100px;
+    }
+    .myCart img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    /****************USER PAGE************/
     .user{
         margin-top: 200px;
     }
@@ -198,11 +295,27 @@ form.textReply{
     #myShop p{
         padding-bottom: 20px;
     }
+    /****************ERROR PAGE************/
+    .errorPage p{
+        font-size: 100px;
+    }
+    .errorPage p:first-of-type{
+        font-size: 250px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    /****************USER PAGE************/
     .user{
         margin-top: 250px;
+    }
+    /****************ERROR PAGE************/
+    .errorPage p{
+        margin-top: 300px;
+    }
+    /*************SHOPPING CART PAGE************/
+    .myShopCart{
+        margin-top: 200px;
     }
 }
