@@ -102,7 +102,7 @@ $(document).ready(function () {
         $('.twelve').show();
     });
 
-    //prikazivanje sadrzaja korpe, drugi zadatak
+    //prikazivanje sadrzaja korpe
 
     $('.shopingCart').click(function () {
         $('.cartProducts').toggle();
@@ -145,7 +145,19 @@ $(document).ready(function () {
         }
     });
     //userPage end
-
+    
+    
+    //order page-show/hide order summary
+    $('.showOrder').click(function () {
+        var txt = $(this).text();
+        $('.orderRight').toggle();
+        if (txt == 'Show order summary') {
+            $(this).text('Hide order summary');
+        } else {
+            $(this).text('Show order summary');
+        }
+    });
+    
     //form
     $('.html_form').validator();
     $('.html_form2').validator();

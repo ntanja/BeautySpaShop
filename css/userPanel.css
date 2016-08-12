@@ -64,7 +64,8 @@
     font-size: 20px;
     font-weight: bold;     
 }
-.tab-pane  select{
+.tab-pane  select,
+.cartShop select{
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -211,17 +212,26 @@ form.textReply{
 .myShopCart .table-responsive{
     border: none;
 }
-.myCart figure{
+.myCart{
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.myCart figure,
+.cartShop figure{
     position: relative;
     width: 50px;
     height: 50px;
+    border: 1px solid #ddd;
 }
-.myCart img{
+.myCart img,
+.cartShop img{
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    max-height: 100%;
+    max-width: 100%;
 }
 .myCart a.remove{
     display: block;
@@ -245,6 +255,163 @@ form.textReply{
     color: #6cc513;
     background: #fff;
 }
+/*************ORDER PAGE************/
+.cartShop{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.cartShop a{
+    text-decoration: none;
+    color: #333;
+}
+.cartShop a:hover{
+    color: #6bc513;
+}
+.cartShop h4{
+    margin-top: 40px;
+    font-weight: bold;
+}
+.cartShop .badge {
+    background-color: #6cc515;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 50%;
+    padding: 5px 8px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+.cartShop button{
+    background-color: #6cc515;
+    color: #fff;
+    border: 1px solid #6cc513;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.cartShop button:hover{
+    color: #6cc513;
+    background: #fff;
+}
+.cartShop select{
+    margin-bottom: 10px;
+}
+.cartShop .form-control{
+    width: 210px;
+    display: inline-block;
+}
+.orderRight .form-group{
+    border-top: 1px solid #ddd;
+    padding: 30px 0;
+    margin-bottom: 0;
+}
+.cartShop input{
+    border: 1px solid #e8e8e8;
+}
+.cartShop input:focus{
+    border: 1px solid #6cc513;
+}
+.countRight{
+    text-align: right;
+}
+.table > tbody > tr.countBorder > td{
+    border-top: none;
+}
+.cartShop .table tfoot td:last-of-type{
+    font-size: 18px;
+    font-weight: bold;
+}
+.cartShop .table-responsive{
+    border: none;
+}
+.cartShop .orderLeft .form-group{
+    border-top: none;
+}
+.cartShop .html_form input,
+.cartShop .html_form2 input{
+    width: 100%;
+}
+.cartShop select:focus{
+    border: 1px solid #6cc513;
+}
+.cartShop .checkbox input{
+    width: auto;
+}
+.cartShop .radio label, .checkbox label{
+    margin-bottom: 50px;
+}
+.orderLeft a:last-of-type{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc513;
+    border-radius: 5px;
+    background: #6cc513;
+    padding: 5px 10px;
+}
+.orderLeft a:last-of-type:hover{
+    background: #fff;
+    color: #6cc513;
+}
+.orderLeft .fa-angle-left{
+    font-size: 18px;
+    font-weight: bold;
+}
+.conditions{
+    margin-top: 50px;
+}
+.orderLeft .conditions a{
+    background: none;
+    border: none;
+    color: #333;
+    padding-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+.orderLeft .conditions a:focus {
+    outline: none;
+}
+.orderLeft .conditions a:last-of-type{
+    padding-right: 0;
+}
+.orderLeft .conditions a:hover{
+    color: #6cc513;
+}
+.orderRight{
+    display: none;
+}
+.showSummary li:last-of-type{
+    font-size: 16px;
+    font-weight: bold;
+}
+.showSummary li a:focus{
+    outline: none;
+}
+
+/***********ORDER ADRESS PAGE*********/
+    .orderAddress form{
+        border: 1px solid #e8e8e8;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .orderAddress .radio label{
+        margin-bottom: 0;
+    }
+    .orderAddress input:focus{
+        outline: none;
+    }
+    .orderAddress > a{
+        background: none;
+        border: none;
+        color: #3c763d;
+        padding: 0;
+    }
+    .orderAddress .pageNav a{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+
+
 
 
 /* Small devices (tablets, 768px and up) */
@@ -270,6 +437,17 @@ form.textReply{
     .myCart img{
         max-height: 100%;
         max-width: 100%;
+    }
+    /*************ORDER PAGE************/
+    .cartShop{
+        margin-top: 150px;
+    }
+    .cartShop .form-control {
+        width: 80%;
+    }
+    .orderLeft .conditions a{
+        padding-right: 20px;
+        display: inline-block;
     }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -302,6 +480,26 @@ form.textReply{
     .errorPage p:first-of-type{
         font-size: 250px;
     }
+    /*************ORDER PAGE************/
+    .cartShop h4:first-of-type{
+        margin-top: -10px;
+    }
+    .cartShop .form-control {
+        width: 70%;
+    }
+    .orderLeft{
+        float: left;
+        border-right: 1px solid #ddd;
+    }
+    .orderRight{
+        float: right;
+        display: block;
+    }
+    .showSummary{
+        display: none;
+    }
+    /***********ORDER ADRESS PAGE*********/
+   
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -316,6 +514,10 @@ form.textReply{
     }
     /*************SHOPPING CART PAGE************/
     .myShopCart{
+        margin-top: 200px;
+    }
+    /*************ORDER PAGE************/
+    .cartShop{
         margin-top: 200px;
     }
 }

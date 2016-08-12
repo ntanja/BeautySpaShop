@@ -1690,29 +1690,45 @@ a.increase, a.decrease{
     text-decoration: none;
     color: #333;
 }
-.cartProducts button{
+.cartProducts tfoot td a{
     border: 1px solid #6cc513;
     background: #6cc513;
     color: #fff;
     padding: 5px 10px;
 }
+.cartProducts tfoot td a:hover{
+    background: #fff;
+    color: #6cc513;
+}
 
 /********************************************************************/
 /*                              MODAL                               */
 /********************************************************************/
-#myModal .modal-header {
+#myModal .modal-header,
+#dataModal .modal-header,
+#conditionsModal .modal-header,
+#shopModal .modal-header{
     border-bottom: 1px solid #6cc513;
 }
-#myModal .modal-footer {
+#myModal .modal-footer,
+#dataModal .modal-footer,
+#conditionsModal .modal-footer,
+#shopModal .modal-footer{
     border-top: 1px solid #6cc513;
 }
-#myModal .btn-default {
+#myModal .btn-default,
+#dataModal .btn-default,
+#conditionsModal .btn-default,
+#shopModal .btn-default{
     color: #fff;
     background-color: #6cc513;
     border-color: #6cc513;
     padding: 10px 20px;
 }
-#myModal .btn-default:hover {
+#myModal .btn-default:hover,
+#dataModal .btn-default:hover,
+#conditionsModal .btn-default:hover,
+#shopModal .btn-default:hover{
     color: #6cc513;
     background-color: #fff;
 }
