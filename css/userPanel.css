@@ -359,7 +359,7 @@ form.textReply{
 .conditions{
     margin-top: 50px;
 }
-.orderLeft .conditions a{
+.conditions a{
     background: none;
     border: none;
     color: #333;
@@ -367,13 +367,16 @@ form.textReply{
     display: block;
     text-align: center;
 }
-.orderLeft .conditions a:focus {
+.conditions a:focus {
     outline: none;
 }
-.orderLeft .conditions a:last-of-type{
+.conditions a:last-of-type{
     padding-right: 0;
+    background: none;
+    border: none;
+    color: #333;
 }
-.orderLeft .conditions a:hover{
+.conditions a:hover{
     color: #6cc513;
 }
 .orderRight{
@@ -388,31 +391,93 @@ form.textReply{
 }
 
 /***********ORDER ADRESS PAGE*********/
-    .orderAddress form{
-        border: 1px solid #e8e8e8;
-        padding: 10px;
-        margin-bottom: 30px;
-    }
-    .orderAddress .radio label{
-        margin-bottom: 0;
-    }
-    .orderAddress input:focus{
-        outline: none;
-    }
-    .orderAddress > a{
-        background: none;
-        border: none;
-        color: #3c763d;
-        padding: 0;
-    }
-    .orderAddress .pageNav a{
-        font-size: 12px;
-        padding: 5px;
-    }
-
-
-
-
+.orderAddress form{
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.orderAddress .radio label{
+    margin-bottom: 0;
+}
+.orderAddress input:focus{
+    outline: none;
+}
+.orderAddress .pageNav a{
+    font-size: 12px;
+    padding: 5px;
+}
+/***********ORDER PAYING PAGE*********/
+.orderBill .html_form2 .radio input{
+    width: auto;
+}
+.orderBill .radio label{
+    margin-bottom: 5px;;
+}
+.orderBill .radio{
+    border-bottom: 1px solid #e8e8e8;
+}
+.orderBill form{
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+.orderBill  .checkbox label {
+    margin-bottom: 0;
+}
+.orderBill .panel-title > a {
+    color: #333;
+    background: transparent;
+    border: none;
+    display: block;
+}
+.orderBill .panel-title > a:hover{
+    color: #6bc513;
+}
+.orderBill .panel-title > a:focus{
+    outline: none;
+}
+.orderBill .panel-default > .panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #e8e8e8;
+}
+.orderBill .panel-heading{
+    border-radius: 5px;
+}
+.orderBill h4.panel-title{
+    margin-top: 0;
+}
+.hideAddress{
+    display: none;
+}
+/***********ORDER REVIEW PAGE*********/
+.reviewPage .row{
+    margin-bottom: 70px;
+    padding: 10px 20px 40px;
+}
+.reviewPage h5{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.reviewPage .row a{
+    background: none;
+    color: #333;
+    padding: 0 10px;
+}
+.reviewPage a.pull-right{
+    font-size: 12px;
+    padding: 5px 0;
+}
+/***********ORDER CLOSING PAGE*********/
+.confirm h4{
+    border-bottom: 1px solid #6cc513;
+}
+.reviewPage .row:first-of-type{
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -445,9 +510,29 @@ form.textReply{
     .cartShop .form-control {
         width: 80%;
     }
-    .orderLeft .conditions a{
+    .conditions a{
         padding-right: 20px;
         display: inline-block;
+    }
+    .conditions{
+        text-align: center;
+    }
+    /***********ORDER REVIEW PAGE*********/
+    .reviewPage a.pull-right{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .reviewPage .row{
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        padding: 10px 20px 40px;
+    }
+    .reviewPage{
+        padding-right: 50px;
+    }
+    /***********ORDER CLOSING PAGE*********/
+    h5.orderNo{
+        margin-top: 40px;
     }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -498,8 +583,13 @@ form.textReply{
     .showSummary{
         display: none;
     }
-    /***********ORDER ADRESS PAGE*********/
-   
+    /***********ORDER CLOSING PAGE*********/
+    h5.orderNo{
+        margin-top: 0;
+    }
+    .confirm h4{
+        padding-top: 30px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -518,6 +608,10 @@ form.textReply{
     }
     /*************ORDER PAGE************/
     .cartShop{
-        margin-top: 200px;
+        margin-top: 250px;
+    }
+    /***********ORDER ADRESS PAGE*********/
+    .orderLeft{
+        padding-left: 50px;
     }
 }

@@ -158,89 +158,130 @@
         <main>
 
             <!--  -->
-            <section class="myShopCart">
+            <section class="cartShop">
                 <div class="container">
-                    <h3>Vaša korpa</h3>
-                    <div class="table-responsive">
-                        <table class="table myCart">
-                            <thead> 
-                                <tr> 
-                                    <th></th>
-                                    <th></th> 
-                                    <th>CENA</th> 
-                                    <th>KOLICINA</th>
-                                    <th>UKUPNO</th>
-                                </tr>
-                            </thead> 
-                            <tbody>
-                                <tr> 
-                                    <td>
-                                        <figure>
-                                            <a href="#"><img src="img/night-cream.png" alt="" class="img-responsive"/></a>
-                                        </figure>
-                                    </td> 
-                                    <td>
-                                        Aveeno night cream
-                                        <a href="#" class="remove">Ukloni</a>
-                                    </td>
-                                    <td>1,300.00 RSD</td> 
-                                    <td>
-                                        <form class="clearfix">
-                                            <div class="form-group pull-left productQuantity">
-                                                <div class="input-group">
-                                                    <input value="1" type="text">
-                                                    <span class="input-group-addon">
-                                                        <a class="increase"><span class="fa fa-angle-up"></span></a>
-                                                        <a class="decrease"><span class="fa fa-angle-down"></span></a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </td> 
-                                    <td>1,300.00 RSD</td>
-                                </tr>
-                                <tr> 
-                                    <td>
-                                        <figure>
-                                            <a href="#"><img src="img/night-cream.png" alt="" class="img-responsive"/></a>
-                                        </figure>
-                                    </td> 
-                                    <td>
-                                        Aveeno night cream
-                                        <a href="#" class="remove">Ukloni</a>
-                                    </td>
-                                    <td>1,300.00 RSD</td> 
-                                    <td>
-                                        <form class="clearfix">
-                                            <div class="form-group pull-left productQuantity1">
-                                                <div class="input-group">
-                                                    <input value="1" type="text">
-                                                    <span class="input-group-addon">
-                                                        <a class="increase"><span class="fa fa-angle-up"></span></a>
-                                                        <a class="decrease"><span class="fa fa-angle-down"></span></a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </td> 
-                                    <td>1,300.00 RSD</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td>Napomena</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Medjuzbir</td>
-                                    <td>2,600.00 RSD</td>
-                                </tr>
-                            </tfoot>
-                        </table>
+                    <div class="showSummary">
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="#" class="showOrder">Show order summary</a>
+                            </li>
+                            <li class="pull-right">2,600.00 RSD</li>
+                        </ul>
                     </div>
-                    <p><i>Iznos za dostavu i iznos popusta će biti obračunati pri zaključenju kupovine</i></p>
-                    <div class="pull-right myLinks" >
-                        <a href="page_2_1.html">Nastavite s kupovinom</a>
-                        <a href="orderPage.html">Zaključenje kupovine</a>
+                    <div class="row">
+                        <div class="col-md-5 orderRight">
+                            <article>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr> 
+                                                <td>
+                                                    <figure>
+                                                        <a href="#"><img src="img/night-cream.png" alt="" class="img-responsive"/><span class="badge">1</span></a>
+                                                    </figure>
+                                                </td> 
+                                                <td>Aveeno night cream</td>
+                                                <td>1,300.00 RSD</td>
+                                            </tr>
+                                            <tr> 
+                                                <td>
+                                                    <figure>
+                                                        <a href="#"><img src="img/night-cream.png" alt="" class="img-responsive"/><span class="badge">1</span></a>
+                                                    </figure>
+                                                </td> 
+                                                <td>Aveeno night cream</td>
+                                                <td>1,300.00 RSD</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="form-group form-inline">
+                                    <input class="form-control" placeholder="Popust">
+                                    <button>Primenite</button>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr> 
+                                                <td>Medjuzbir</td> 
+                                                <td class="countRight">2,600.00 RSD</td>
+                                            </tr>
+                                            <tr class="countBorder">  
+                                                <td>Dostava</td>
+                                                <td class="countRight">-</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>Ukupno</td>
+                                                <td class="countRight">2,600.00 RSD</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-7 orderLeft reviewPage">
+                            <article>
+                                <h5 class="orderNo">Porudžbina #2365987</h5>
+                                <h3>Hvala, Vladane!</h3>
+                                <div class="row">
+                                    <div class="col-xs-12 confirm">
+                                        <h4>Vaša porudžbina je potvrdjena</h4>
+                                        <p>
+                                            Izabrali ste plaćanje pouzecem. 
+                                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                                        </p>
+                                    </div>
+                                </div>
+                                <h4>Podaci o kupcu</h4>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <article>
+                                            <h5>Adresa za dostavu</h5>
+                                            <p>Ime Prezime</p>
+                                            <p>Kompanija</p>
+                                            <p>Adresa</p>
+                                            <p>POŠTANSKI BROJ  Grad</p>
+                                            <p>Serbia</p>
+                                            <p>Telefon</p>
+                                        </article>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <article>
+                                            <h5>Adresa za račun</h5>  
+                                            <p>Ime Prezime</p>
+                                            <p>Kompanija</p>
+                                            <p>Adresa</p>
+                                            <p>POŠTANSKI BROJ  Grad</p>
+                                            <p>Serbia</p>
+                                            <p>Telefon</p>
+                                        </article>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <article>
+                                            <h5>Način dostave</h5>
+                                            <p>Besplatno slanje kurirskom službom</p>
+                                        </article>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <article>
+                                            <h5>Način plaćanja</h5>  
+                                            <p>Plaćanje pouzećem - 2,600.00 RSD</p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <a href="orderPaying.html"><span class="fa fa-angle-left"></span> Nazad na način plaćanja</a>
+                                <a href="#.html" class="pull-right">Zaključenje porudžbine</a>
+                                <div class="conditions">
+                                    <a href="#" data-toggle="modal" data-target="#dataModal">Privatnost i zaštita podataka</a>
+                                    <a href="#" data-toggle="modal" data-target="#conditionsModal">Uslovi za reklamacije i povraćaj</a>
+                                    <a href="#" data-toggle="modal" data-target="#shopModal">Uslovi korišćenja i kupovine</a>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -452,8 +493,101 @@
         </div>
         <!-- Modal end-->
 
+        <!-- Modal "Privatnost i zastita podataka" -->
+        <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel3">Privatnost i zaštita podataka</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Insert second title here</h4>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal "Privatnost i zastita podataka" end-->
 
+        <!-- Modal "Uslovi za reklamacije i povraćaj" -->
+        <div class="modal fade" id="conditionsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel1">Uslovi za reklamacije i povraćaj</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Insert second title here</h4>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal "Uslovi za reklamacije i povraćaj" end-->
 
+        <!-- Modal "Uslovi korišćenja i kupovine" -->
+        <div class="modal fade" id="shopModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel2">Uslovi korišćenja i kupovine</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                        </p>
+                        <p>
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                            Cras mattis consectetur purus sit amet fermentum. Cras 
+                            justo odio, dapibus ac facilisis in, egestas eget quam. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal "Uslovi korišćenja i kupovine" end-->
 
 
 
@@ -468,6 +602,7 @@
         <script src="/resources/demos/external/jquery-mousewheel/jquery.mousewheel.js"></script>
         <script src="js/validator.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

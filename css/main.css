@@ -1273,14 +1273,16 @@ a.increase, a.decrease{
     background: #fff;
     border-radius: 0;
 }
-.productQuantity input{
+.productQuantity input,
+.productQuantity1 input{
     padding: 12px 0;
     width: 50px;
     text-align: center;
     border: 1px solid #ccc;
     font-weight: bold;
 }
-.productQuantity{
+.productQuantity,
+.productQuantity1{
     cursor: pointer;
 }
 /************************************

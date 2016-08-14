@@ -64,15 +64,29 @@ $(document).ready(function () {
             txt--;
             $('.productQuantity input').val(txt);
         }
-
     });
-
     $('.productQuantity span a.increase').click(function () {
         var txt = $('.productQuantity input').val();
         txt++;
         $('.productQuantity input').val(txt);
-
     });
+    //spinner 1
+    $('.productQuantity1 span a.decrease').click(function () {
+        var txt = $('.productQuantity1 input').val();
+
+        if (txt <= 1) {
+            $('.productQuantity1 input').val(1);
+        } else {
+            txt--;
+            $('.productQuantity1 input').val(txt);
+        }
+    });
+    $('.productQuantity1 span a.increase').click(function () {
+        var txt = $('.productQuantity1 input').val();
+        txt++;
+        $('.productQuantity1 input').val(txt);
+    });
+    
 
     //tabulator 
     $(function () {
@@ -158,6 +172,13 @@ $(document).ready(function () {
         }
     });
     
+    //orderPaying page
+    $('.delivery').click(function () {
+         $('.hideAddress').hide();
+        });
+    $('.bill').click(function () {
+         $('.hideAddress').show();
+        });
     //form
     $('.html_form').validator();
     $('.html_form2').validator();
