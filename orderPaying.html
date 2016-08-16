@@ -225,42 +225,33 @@
                             <article>
                                 <h4>Način plaćanja</h4>
                                 <p>Sve transakcije su šifrovane. Podaci o karticama se ne čuvaju.</p>
-                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    Plaćanje pouzećem
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                                Cras mattis consectetur purus sit amet fermentum. Cras 
-                                                justo odio, dapibus ac facilisis in, egestas eget quam. 
-                                                Morbi leo risus, porta ac consectetur ac, vestibulum at eros
-                                            </div>
-                                        </div>
+                                <div class="payPanel">
+                                    <div class="radio paying">
+                                        <label>
+                                            <input type="radio" name="Racun" value="Adresa dostave" checked>
+                                            Plaćanje pouzećem
+                                        </label>
                                     </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    PayPal (samo za porudzbine izvan Srbije)
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                                Za porudžbine van Srbije moguće je izvršiti 
-                                                uplatu u EUR ili USD putem PayPal servisa. 
-                                                Konverzija valute se vrši po donjem kursu 
-                                                NBS na dan porudžbine, i celokupan iznos će 
-                                                biti uvećan za proviziju PayPal servisa od 3%. 
-                                            </div>
-                                        </div>
+                                    <div class="panel1">
+                                        Cras mattis consectetur purus sit amet fermentum. Cras 
+                                        justo odio, dapibus ac facilisis in, egestas eget quam. 
+                                        Morbi leo risus, porta ac consectetur ac, vestibulum at eros
+                                    </div>
+                                    <div class="radio paying">
+                                        <label>
+                                            <input type="radio" name="Racun" value="Adresa dostave" checked>
+                                            Plaćanje pouzećem
+                                        </label>
+                                    </div>
+                                    <div class="panel1">
+                                        Za porudžbine van Srbije moguće je izvršiti 
+                                        uplatu u EUR ili USD putem PayPal servisa. 
+                                        Konverzija valute se vrši po donjem kursu 
+                                        NBS na dan porudžbine, i celokupan iznos će 
+                                        biti uvećan za proviziju PayPal servisa od 3%. 
                                     </div>
                                 </div>
+
                                 <h4>Adresa za račun</h4>  
                                 <form class="html_form2">
                                     <div class="radio delivery">
@@ -276,63 +267,63 @@
                                         </label>
                                     </div>
                                     <div class="hideAddress">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="inputName" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputName" placeholder="Ime" data-error="Molimo unesite ime" required>
-                                                <div class="help-block with-errors"></div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="inputName" class="control-label sr-only"></label>
+                                                    <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputName" placeholder="Ime" data-error="Molimo unesite ime" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="inputLastName" class="control-label sr-only"></label>
+                                                    <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputLastName" placeholder="Prezime" data-error="Molimo unesite prezime" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="inputLastName" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_A-z\s]{1,}$"  class="form-control" id="inputLastName" placeholder="Prezime" data-error="Molimo unesite prezime" required>
-                                                <div class="help-block with-errors"></div>
+                                        <div class="form-group">
+                                            <label for="inputCompany" class="control-label sr-only"></label>
+                                            <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCompany" placeholder="Kompanija (opciono)">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputAddress" class="control-label sr-only"></label>
+                                            <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputAddress" placeholder="Adresa" data-error="Molimo unesite adresu">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputCity" class="control-label sr-only"></label>
+                                            <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCity" placeholder="Grad" data-error="Molimo unesite grad" required>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select class="form-control" required>
+                                                    <option selected="selected">Drzava</option>
+                                                    <option value="1" >Srbija</option>
+                                                    <option value="2" >Crna Gora</option>
+                                                    <option value="3" >Slovenija</option>
+                                                    <option value="4" >Hrvatska</option>
+                                                    <option value="5" >Bosna i Hercegovina</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group form-inline">
+                                                    <label for="inputPostNumber" class="control-label sr-only"></label>
+                                                    <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPostNumber" placeholder="Postanski broj" data-error="Molimo unesite postanski broj" required>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputCompany" class="control-label sr-only"></label>
-                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCompany" placeholder="Kompanija (opciono)">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputAddress" class="control-label sr-only"></label>
-                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputAddress" placeholder="Adresa" data-error="Molimo unesite adresu">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputCity" class="control-label sr-only"></label>
-                                        <input type="text" pattern="^[_A-z0-9]{1,}$"  class="form-control" id="inputCity" placeholder="Grad" data-error="Molimo unesite grad" required>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <select class="form-control" required>
-                                                <option selected="selected">Drzava</option>
-                                                <option value="1" >Srbija</option>
-                                                <option value="2" >Crna Gora</option>
-                                                <option value="3" >Slovenija</option>
-                                                <option value="4" >Hrvatska</option>
-                                                <option value="5" >Bosna i Hercegovina</option>
-                                            </select>
+                                        <div class="form-group">
+                                            <label for="inputPhone" class="control-label sr-only"></label>
+                                            <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone" placeholder="Telefon" data-error="Molimo unesite ispravan telefon" required>
+                                            <div class="help-block with-errors"></div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group form-inline">
-                                                <label for="inputPostNumber" class="control-label sr-only"></label>
-                                                <input type="text" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPostNumber" placeholder="Postanski broj" data-error="Molimo unesite postanski broj" required>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPhone" class="control-label sr-only"></label>
-                                        <input type="tel" pattern="^[_0-9]{1,}$"  class="form-control" id="inputPhone" placeholder="Telefon" data-error="Molimo unesite ispravan telefon" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> Sačuvajte informacije za sledeći put
-                                        </label>
-                                    </div> 
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Sačuvajte informacije za sledeći put
+                                            </label>
+                                        </div> 
                                     </div>
                                 </form>
 

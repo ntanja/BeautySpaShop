@@ -179,6 +179,14 @@ $(document).ready(function () {
     $('.bill').click(function () {
          $('.hideAddress').show();
         });
+        
+     //
+     $('.paying').click(function () {
+         $(this).nextAll(".panel1").hide();
+         $(this).prevAll(".panel1").hide();
+         $(this).next(".panel1").show();
+        });
+        
     //form
     $('.html_form').validator();
     $('.html_form2').validator();

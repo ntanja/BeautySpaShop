@@ -34,16 +34,7 @@
 .user .nav-pills > li{
     max-width: 200px;
 }
-.user .fa-user{
-    background: #ccc;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 25px;
-    line-height: 25px;
-    padding: 10px 15px;
-    margin-top: 40px;
-}
+
 .user #myData1 .row{
     border: 1px solid #6cc513;
     padding: 10px 0;
@@ -216,6 +207,9 @@ form.textReply{
     margin-top: 20px;
     font-family: 'Josefin Sans', sans-serif;
 }
+.table.myCart td {
+    vertical-align: middle;
+}
 .myCart figure,
 .cartShop figure{
     position: relative;
@@ -382,6 +376,9 @@ form.textReply{
 .orderRight{
     display: none;
 }
+.orderRight .table > tbody > tr > td{
+    vertical-align: middle;
+}
 .showSummary li:last-of-type{
     font-size: 16px;
     font-weight: bold;
@@ -425,28 +422,14 @@ form.textReply{
 .orderBill  .checkbox label {
     margin-bottom: 0;
 }
-.orderBill .panel-title > a {
-    color: #333;
-    background: transparent;
-    border: none;
-    display: block;
-}
-.orderBill .panel-title > a:hover{
-    color: #6bc513;
-}
-.orderBill .panel-title > a:focus{
-    outline: none;
-}
-.orderBill .panel-default > .panel-heading {
-    color: #333;
-    background-color: #fff;
-    border-color: #e8e8e8;
-}
-.orderBill .panel-heading{
+.orderBill .payPanel {
+    border: 1px solid #e8e8e8;
     border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
 }
-.orderBill h4.panel-title{
-    margin-top: 0;
+.orderBill .panel1{
+    display: none;
 }
 .hideAddress{
     display: none;
@@ -546,6 +529,25 @@ form.textReply{
     }
     #myData1{
         padding: 0;
+    }
+    #myData1 figure{
+        position: relative;
+        width: 70px;
+        height: 70px;
+        border: 1px solid #6cc513;
+        background-color: #e8e8e8;
+        border-radius: 50%;
+        margin-top: 30px;
+    }
+    #myData1 img{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        max-height: 100%;
+        max-width: 100%;
     }
     .tab-pane select{
         max-width: 100%;
