@@ -172,7 +172,7 @@ $(document).ready(function () {
         }
     });
     
-    //orderPaying page
+    //orderPaying page-hide form
     $('.delivery').click(function () {
          $('.hideAddress').hide();
         });
@@ -180,7 +180,7 @@ $(document).ready(function () {
          $('.hideAddress').show();
         });
         
-     //
+     //orderPaying page-hide paying method
      $('.paying').click(function () {
          $(this).nextAll(".panel1").hide();
          $(this).prevAll(".panel1").hide();
