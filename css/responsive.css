@@ -1,9 +1,6 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    main{
-        margin-top: 0;
-    }
     .myNav .navbar-toggle {
         display: none;
     }
@@ -13,6 +10,9 @@
     }
     .headerTop{
         padding: 10px 0;
+    }
+    .nav-up {
+        top: -48px; 
     }
     .headerTop ul.language{
         float: left;
@@ -122,12 +122,20 @@
     }
     /***********************SHOPPING CART***********************/
     .cartProducts{
-    top: 70px;
-}
+        top: 70px;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {     
+    .nav-up {
+        top: -50px; 
+        background: rgba(255,255,255,0.9);
+    }
+    .navpadd{
+        padding: 0;
+        
+    }
     .soap {
         padding-bottom: 20px;
     }
@@ -404,7 +412,7 @@
     .logPg button{
         width: 300px;
     }
-        /************************SHOPPING CART***********************/
+    /************************SHOPPING CART***********************/
     .cartProducts{
         top: 150px;
     }

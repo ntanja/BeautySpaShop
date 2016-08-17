@@ -86,7 +86,7 @@ $(document).ready(function () {
         txt++;
         $('.productQuantity1 input').val(txt);
     });
-    
+
 
     //tabulator 
     $(function () {
@@ -147,7 +147,7 @@ $(document).ready(function () {
     $('button.reply').click(function () {
         $('form.textReply').show();
     });
-    
+
     //show-hide product history
     $('.showHistory').click(function () {
         var txt = $(this).text();
@@ -159,8 +159,8 @@ $(document).ready(function () {
         }
     });
     //userPage end
-    
-    
+
+
     //order page-show/hide order summary
     $('.showOrder').click(function () {
         var txt = $(this).text();
@@ -171,22 +171,61 @@ $(document).ready(function () {
             $(this).text('Show order summary');
         }
     });
-    
+
     //orderPaying page-hide form
     $('.delivery').click(function () {
-         $('.hideAddress').hide();
-        });
+        $('.hideAddress').hide();
+    });
     $('.bill').click(function () {
-         $('.hideAddress').show();
-        });
-        
-     //orderPaying page-hide paying method
-     $('.paying').click(function () {
-         $(this).nextAll(".panel1").hide();
-         $(this).prevAll(".panel1").hide();
-         $(this).next(".panel1").show();
-        });
-        
+        $('.hideAddress').show();
+    });
+
+    //orderPaying page-hide paying method
+    $('.paying').click(function () {
+        $(this).nextAll(".panel1").hide();
+        $(this).prevAll(".panel1").hide();
+        $(this).next(".panel1").show();
+    });
+
+    //navTop hide on scroll
+
+    var didScroll;
+    var lastScrollTop = 50;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function (event) {
+        didScroll = true;
+    });
+
+    setInterval(function () {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $('header').removeClass('nav-down').addClass('nav-up');
+            $('.navbar').css("padding", "5px");
+        } else {
+            // Scroll Up
+            if (st + $(window).height() < $(document).height()) {
+                $('header').removeClass('nav-up').addClass('nav-down');
+                $('.navbar').css("padding", "40px");
+            }
+        }
+
+        lastScrollTop = st;
+    }
+
     //form
     $('.html_form').validator();
     $('.html_form2').validator();

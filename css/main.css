@@ -10,7 +10,8 @@ header{
     z-index: 20;
     width: 100%;
     top:0;
-}  
+    transition: top 0.2s ease-in-out;
+} 
 .headerTop{
     font-family: 'Josefin Sans', sans-serif;
 }
